@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="masthead" role="navigation">
+      <div class="masthead-brand">
+        <div class="masthead-logo">
+          {% include logo.svg %}
+        </div>
+      </div>
+      <ul class="masthead-nav">
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#devices">Devices</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#the-lab">Lab</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#donate">Donate</a>
+        </li>
+      </ul>
+      <a class="masthead-booking" href="#booking">Booking</a>
+    </nav>
+
+    <main role="main">
+      {{ content }}
+    </main>
+
+    <!-- JS -->
+    <!-- build:js /assets/javascript/all.min.js -->
+    <script src="assets/javascript/app.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

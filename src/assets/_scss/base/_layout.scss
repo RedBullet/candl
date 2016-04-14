@@ -1,0 +1,34 @@
+html {
+  background-color: #f5f0e9;
+}
+
+body {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: 0 $padding-v-fluid;
+}
+
+.wrapper-wide {
+  padding: 0 $padding-v-fluid;
+  margin: 0 auto;
+  max-width: 60em;
+  box-sizing: content-box;
+}
+
+section {
+  padding: $padding-v-fluid 0;
+}
+
+hr {
+  background: url(/assets/images/charger.svg) center center no-repeat;
+  background-size: 100%;
+  border: 0;
+  height: 4em;
+  margin: 0;
+
+  @include bp-1 {
+    height: 6.5em;
+  }
+}

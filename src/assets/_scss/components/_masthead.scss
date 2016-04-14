@@ -1,0 +1,74 @@
+.masthead {
+  align-items: center;
+  background-color: $color-brand-primary;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: $padding-v $padding-h;
+
+  @include bp-1 {
+    justify-content: space-between;
+  }
+
+  &-brand {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: $padding-v $padding-h;
+    position: relative;
+    top: -0.3em;
+
+    @include bp-1 {
+      max-width: 8em;
+    }
+  }
+
+  &-logo {
+    width: 110 / 16 * 1em;
+  }
+
+  &-nav {
+    @extend %list-unstyled;
+    color: white;
+    display: flex;
+
+    &-link {
+      color: white;
+      display: block;
+      padding: $padding-v ($padding-h / 2);
+
+      @include bp-1 {
+        &:hover {
+          background-color: #67B9FF;
+          border-radius: 5em;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+
+      @include bp-1 {
+        padding: $padding-large $padding-h;
+      }
+    }
+  }
+
+  &-booking {
+    border-bottom: solid 2px #ffff66;
+    color: #ffff66;
+    padding-bottom: 0.25em;
+    position: relative;
+    top: 0.25em;
+
+    @include bp-1 {
+      background-color: #ffff66;
+      border: none;
+      border-radius: 5em;
+      color: #222;
+      padding: $padding-large $padding-h;
+      top: 0;
+    }
+  }
+}

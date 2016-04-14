@@ -1,0 +1,46 @@
+
+
+h1,
+h2,
+h3 {
+  font-family: $font-hand;
+}
+
+h2 {
+  font-size: 2.75em;
+  margin-bottom: $spacing-v;
+  text-align: center;
+
+  & svg {
+    display: block;
+    margin: 0 auto $spacing-v;
+  }
+}
+
+h3 {
+  color: $color-brand-primary;
+  font-size: 2em;
+}
+
+mark {
+  background: #ff6;
+  color: #222;
+  padding: 1%;
+}
+
+.device-os {
+  text-align: right;
+
+  @include bp-1 {
+    text-align: inherit;
+  }
+}
+
+.device-type,
+.device-contributor {
+  display: none;
+
+  @include bp-1 {
+    display: table-cell;
+  }
+}

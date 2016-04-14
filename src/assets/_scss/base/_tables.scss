@@ -1,0 +1,35 @@
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+
+  &:first-child {
+    border-bottom-left-radius: $ui-border-radius;
+    border-top-left-radius: $ui-border-radius;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: $ui-border-radius;
+    border-top-right-radius: $ui-border-radius;
+  }
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $color-brand-light;
+}
+
+tr > td,
+tr > th {
+  border: none;
+  padding: $padding-v ($padding-h / 2);
+
+  @include bp-1 {
+    padding: $padding-v $padding-h;
+  }
+}
+

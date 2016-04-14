@@ -1,0 +1,114 @@
+@keyframes jump {
+  0% {
+    transform: translate(0, 100%);
+    visibility: visible;
+  }
+
+  60% {
+    transform: translate(0, -15%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+    visibility: visible;
+  }
+}
+
+.hero {
+  background-color: $color-brand-primary;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  &-title {
+    color: #254461;
+    font-size: 3em;
+    padding: $spacing-v-fluid 0;
+    position: relative;
+    word-spacing: 0.125em;
+    z-index: 1;
+
+    @include bp-2 {
+      font-size: 4.5em;
+    }
+
+    @include bp-3 {
+      padding: $spacing-h 0;
+    }
+  }
+
+  &:before {
+    background: url(/assets/images/uneven-edge.svg) 0 0 no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1.5em;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    color: #edfff9;
+    font-size: 1.125em;
+  }
+
+  &-devices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2em;
+
+    .device {
+      align-self: flex-end;
+      margin: 0 $padding-h/6;
+    }
+
+    @include bp-1 {
+      .device {
+        animation-fill-mode: forwards;
+        visibility: hidden;
+
+        .wf-active & {
+          animation: jump 700ms ease-in-out;
+          animation-fill-mode: forwards;
+        }
+
+        &-iphone {
+          width: percentage(128 / 1253);
+        }
+
+        &-ipad {
+          animation-delay: 200ms;
+          width: percentage(285 / 1253);
+        }
+
+        &-firefox {
+          animation-delay: 100ms;
+          width: percentage(150 / 1253);
+        }
+
+        &-htc {
+          animation-delay: 150ms;
+          width: percentage(154 / 1253);
+        }
+
+        &-blackberry {
+          animation-delay: 200ms;
+          width: percentage(404 / 1253);
+        }
+
+        &-nokia {
+          animation-delay: 250ms;
+          width: percentage(132 / 1253);
+        }
+      }
+    }
+  }
+
+}

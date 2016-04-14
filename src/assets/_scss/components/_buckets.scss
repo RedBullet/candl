@@ -1,0 +1,20 @@
+.buckets {
+  margin-top: -$spacing-v;
+
+  @include bp-1 {
+    display: flex;
+
+    &-item {
+      flex: 1 1 auto;
+      margin: 0 $spacing-h;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+%list-unstyled {
+  list-style: none;
+  margin: 0;
+}
+
+.hidden-xs {
+  display: none;
+
+  @include bp-1 {
+    display: initial;
+  }
+}
