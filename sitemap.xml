@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>localhost:4000/</loc>
+    <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>localhost:4000/404.html</loc>
+    
+      <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>localhost:4000/styleguide/components.html</loc>
+    
+      <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>localhost:4000/styleguide/</loc>
+    
+      <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>localhost:4000/</loc>
+    
+      <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>localhost:4000/sitemap.xml</loc>
+    
+      <lastmod>2016-04-14T17:22:25+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+</urlset>
