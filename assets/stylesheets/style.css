@@ -2366,8 +2366,8 @@ button[type=submit] {
             transform: translate(0, 100%);
     visibility: visible; }
   60% {
-    -webkit-transform: translate(0, -15%);
-            transform: translate(0, -15%); }
+    -webkit-transform: translate(0, -13%);
+            transform: translate(0, -13%); }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -2379,8 +2379,8 @@ button[type=submit] {
             transform: translate(0, 100%);
     visibility: visible; }
   60% {
-    -webkit-transform: translate(0, -15%);
-            transform: translate(0, -15%); }
+    -webkit-transform: translate(0, -13%);
+            transform: translate(0, -13%); }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -2411,8 +2411,9 @@ button[type=submit] {
     content: '';
     display: block;
     height: 1.5em;
+    margin: 0 -5%;
     position: absolute;
-    width: 100%;
+    width: 110%;
     z-index: 1; }
   .hero h1 {
     position: relative;
@@ -2429,7 +2430,8 @@ button[type=submit] {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: -2em; }
+    margin: 0 auto -2em;
+    max-width: calc(60em + 10%); }
     .hero-devices .device {
       -webkit-align-self: flex-end;
           -ms-flex-item-align: end;
@@ -2507,7 +2509,8 @@ button[type=submit] {
             justify-content: center;
     padding: 0.5em 1em;
     position: relative;
-    top: -0.3em; }
+    top: -0.3em;
+    width: 100%; }
     @media (min-width: 40em) {
       .masthead-brand {
         max-width: 8em; } }
