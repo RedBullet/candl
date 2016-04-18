@@ -1,19 +1,390 @@
-<!DOCTYPE html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><link rel=apple-touch-icon sizes=57x57 href=/apple-touch-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-touch-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-touch-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-touch-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-touch-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-touch-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-touch-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-touch-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon-180x180.png><link rel=icon type=image/png href=/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/android-chrome-192x192.png sizes=192x192><link rel=icon type=image/png href=/favicon-96x96.png sizes=96x96><link rel=icon type=image/png href=/favicon-16x16.png sizes=16x16><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=msapplication-TileImage content=/mstile-144x144.png><meta name=theme-color content=#4dadff><link href=//gmpg.org/xfn/11 rel=profile><meta http-equiv=content-type content="text/html; charset=utf-8"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Styleguide - Components &middot; candl.io</title><link rel=stylesheet href=/assets/stylesheets/style.min.514f65e1.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=/assets/images/touch/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/assets/favicon.ico></head><body><nav class=masthead role=navigation><div class=masthead-brand><div class=masthead-logo><svg version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px width=110px height=48px viewbox="0 0 110 48" enable-background="new 0 0 110 48" xml:space=preserve><g><path fill=#FFFFFF d="M11.3,27.1c0.5,0.2,5.5,9,6.5,4c1.1-5.4-5.6-7.7-9.1-9C-2.6,23.9-2.9,44.4,7.9,47.5c4,1.1,10.7-1.9,9.8-7.2
-    c-0.9-6-4.4,0.6-5.3,2c-3.3,5.4-7.7-2.6-7.9-5.8C4.5,33.4,6.6,24.6,11.3,27.1z"><path fill=#FFFFFF d="M29.9,33.6c0,0.1,0,0.2,0,0.3c0,0,0.1,0.1,0.1,0.1C30.1,34,29.9,33.4,29.9,33.6z"><path fill=#FFFFFF d="M31.4,20.9C31.7,20.9,31.8,20.9,31.4,20.9C30,20.9,30.8,20.9,31.4,20.9c-3.3,0-4.3,7.8-5,9.9
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#4dadff">
+
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Styleguide - Components &middot; candl.io
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/style.min.514f65e1.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/touch/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+</head>
+
+
+  <body>
+    <nav class="masthead" role="navigation">
+      <div class="masthead-brand">
+        <div class="masthead-logo">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="110px" height="48px" viewBox="0 0 110 48" enable-background="new 0 0 110 48" xml:space="preserve">
+<g>
+  <path fill="#FFFFFF" d="M11.3,27.1c0.5,0.2,5.5,9,6.5,4c1.1-5.4-5.6-7.7-9.1-9C-2.6,23.9-2.9,44.4,7.9,47.5c4,1.1,10.7-1.9,9.8-7.2
+    c-0.9-6-4.4,0.6-5.3,2c-3.3,5.4-7.7-2.6-7.9-5.8C4.5,33.4,6.6,24.6,11.3,27.1z"/>
+  <path fill="#FFFFFF" d="M29.9,33.6c0,0.1,0,0.2,0,0.3c0,0,0.1,0.1,0.1,0.1C30.1,34,29.9,33.4,29.9,33.6z"/>
+  <path fill="#FFFFFF" d="M31.4,20.9C31.7,20.9,31.8,20.9,31.4,20.9C30,20.9,30.8,20.9,31.4,20.9c-3.3,0-4.3,7.8-5,9.9
     c-1.6,4.4-3.4,8.8-5.4,13.1c-2.1,4.7,4.4,1.2,5.6-1.5c1.6-3.7,2-4.5,6.1-4.7c3.3-0.1,3.7,5,3.7,7.8c0.1,4.7,3.6,0.8,3.9-1.9
     C40.6,39.3,37.4,21.1,31.4,20.9z M29.9,34c0,0-0.1,0-0.1-0.1c0-0.1,0-0.2,0-0.3c0.2-1.3,1.4-5.5,1.9-5.6c0.7-0.1,2,5.1,2,5.4
-    C33.8,34.1,30.6,34.3,29.9,34z"><path fill=#FFFFFF d="M74.1,27c0,0.1,0,0.3,0,0.4C74,29.2,74.5,27,74.1,27z"><path fill=#FFFFFF d="M77.1,21.3c-2.7,0-4.3,0-7,0c-0.6,0.4-0.6,0.5-0.5,0.4c-1.5,1.8-0.7,7.1-0.8,9c-0.2,4.6-0.2,9.3-0.4,13.9
+    C33.8,34.1,30.6,34.3,29.9,34z"/>
+  <path fill="#FFFFFF" d="M74.1,27c0,0.1,0,0.3,0,0.4C74,29.2,74.5,27,74.1,27z"/>
+  <path fill="#FFFFFF" d="M77.1,21.3c-2.7,0-4.3,0-7,0c-0.6,0.4-0.6,0.5-0.5,0.4c-1.5,1.8-0.7,7.1-0.8,9c-0.2,4.6-0.2,9.3-0.4,13.9
     c-0.3,5.5,5.9,2,8.6,1.3c8.2-2,12.1-13.3,8.1-20.4C83.4,22.4,80.5,21.2,77.1,21.3z M78.9,41c-1.8,2.2-6.5,4.9-5.8,0
-    c0.7-4.4,0.6-9.1,0.9-13.5c0-0.1,0-0.3,0-0.4c3.2,0,6.7-3.9,8.3,1.7C83.7,33.1,81.6,37.7,78.9,41z"><path fill=#FFFFFF d="M100.1,42.8c-4.1-0.1-4.1,0.7-4.2-3.9c-0.1-3.7,2.9-16.2-2.1-17.8c1.1,0.1,2.2,0.1-0.8-0.2
-    c-0.6,0-0.6,0-0.3,0.1c-2.9,1.4-1.8,23.2-1,26.1c0.6,2.3,6.3,0,7.3-0.1c3.6-0.2,6.2,0.8,9.9,0C113.7,44.3,101,42.8,100.1,42.8z"><path fill=#FFFFFF d="M61.9,0c-0.9,1.7-1.2,3.6-0.9,5.5c-0.2,1-0.3,1.1-0.3,0.9c-1.2,3-5.2,7.2-2.2,9.5c1.1,0.8,2.1,1.4,3.2,1.6
+    c0.7-4.4,0.6-9.1,0.9-13.5c0-0.1,0-0.3,0-0.4c3.2,0,6.7-3.9,8.3,1.7C83.7,33.1,81.6,37.7,78.9,41z"/>
+  <path fill="#FFFFFF" d="M100.1,42.8c-4.1-0.1-4.1,0.7-4.2-3.9c-0.1-3.7,2.9-16.2-2.1-17.8c1.1,0.1,2.2,0.1-0.8-0.2
+    c-0.6,0-0.6,0-0.3,0.1c-2.9,1.4-1.8,23.2-1,26.1c0.6,2.3,6.3,0,7.3-0.1c3.6-0.2,6.2,0.8,9.9,0C113.7,44.3,101,42.8,100.1,42.8z"/>
+  <path fill="#FFFFFF" d="M61.9,0c-0.9,1.7-1.2,3.6-0.9,5.5c-0.2,1-0.3,1.1-0.3,0.9c-1.2,3-5.2,7.2-2.2,9.5c1.1,0.8,2.1,1.4,3.2,1.6
     c-0.3,0.9-0.6,1.9-0.7,2.8c-0.2,0.1-0.2,0.1,0,0.1c0,0.1,0,0.2,0,0.3c-2.3,2.8-1,15.3-1.1,17.6c-4-1.5-6.9-12-9-15.5
     c-4.8-7.6-5.4,3.4-5.6,6.7c-0.2,4.4-0.6,8.7-0.7,13.1c0,1,0.6,6,2.5,2.9c1.7-2.8,0-13.9,2.2-15.1c1-0.5,13.1,28.5,14.8,12
-    c0.2-2.4,1.5-18.6-1.2-21.7c0.3-1,0.6-2.2,0.6-3.2c1-0.3,1.9-1,2.6-2.4c1.4-2.8,1.2-5.5-0.1-8.3C65.6,6.1,61.9-0.1,61.9,0z"><path fill=#FFFFFF d="M60.7,6.4c0.1-0.3,0.2-0.6,0.3-0.9C60.8,4.2,60.6,6,60.7,6.4z"></g></svg></div></div><ul class=masthead-nav><li class=masthead-nav-item><a class=masthead-nav-link href=#devices>Devices</a></li><li class=masthead-nav-item><a class=masthead-nav-link href=#the-lab>Lab</a></li><li class=masthead-nav-item><a class=masthead-nav-link href=#donate>Donate</a></li></ul><a class=masthead-booking href=#booking>Booking</a></nav><main role=main><h1>Styleguide - Components</h1><nav class=nav-block><ul><li><a href=/styleguide>Base</a></li><li class=active><a href=components.html>Components</a></li><li><a href=prototypes>Prototypes</a></li></ul></nav><menu><li><a href=#buttons>Buttons</a></li><li><a href=#skin>Skin</a></li><li><a href=#images>Images</a></li><li><a href=#cards>Cards</a></li><li><a href=#nav>Nav</a></li><li><a href=#callout>Callout</a></li><li><a href=#collapse>Collapse</a></li><li><a href=#context>Context</a></li></menu><section id=buttons><header><h1>Buttons</h1><p class=lead>Some text about components.</p></header><h2>Default</h2><button type=button>Button</button> <button type=button class=btn>Button.btn</button> <button type=button class=btn disabled>Button.btn:disabled</button> <a class=btn>a.btn</a> <a class="btn active">a.btn.active</a> <a class="btn disabled">a.btn.disabled</a><h2>Primary</h2><button type=submit>Button</button> <button type=button class="btn btn-primary">Button.btn.primary</button> <button type=button class="btn btn-primary" disabled>Button.btn-primary:disabled</button> <a class="btn btn-primary">a.btn.btn-primary</a> <a class="btn btn-primary active">a.btn-primary.active</a> <a class="btn btn-primary disabled">a.btn-primary.disabled</a></section><section id=skin><header><h1>Skin</h1></header><div class="card skin skin-brand"><h2>.skin-brand</h2><p>This is primary content</p><a class=btn>a.btn</a> <button type=submit>Button</button></div><div class="card skin skin-dark"><h2>.skin-dark</h2><p>This is secondary content</p><a class=btn>a.btn</a> <button type=submit>Button</button></div><div class="card skin skin-light"><h2>.skin-light</h2><p>This is tertiary content</p><a class=btn>a.btn</a> <button type=submit>Button</button></div></section><section id=card><header><h1>Cards</h1><p class=lead>Super flexible pattern</p></header><h2>Static</h2><div class=card>Default .card</div><div class="card skin-brand">Branded .card</div><div class="card skin-light">Light .card</div><div class="card skin-dark">Light .card</div><div href=# class=card><h3>Card</h3><p>with lots of content</p><a href=# class=btn>And a button</a></div><h2>Links and Buttons</h2><a href=# class=card><h3>Card</h3><p>that links to something</p></a> <a href=# class="card btn"><h3>Card Button</h3><p>yup this is a button now</p></a> <a href=# class="card btn btn-primary"><h3>Card Button</h3><p>yup this is a button now</p></a><h2>Alerts</h2><div class="card alert-info"><h3>Information</h3><p>This is some information</p></div><div class="card alert-warning"><h3>Card Button</h3><p>This is a warning</p></div><section id=nav><header><h1>Nav</h1></header><nav class=nav-block><ul><li><a href=#>Join our team</a></li><li><a href=#>See where we work</a></li></ul></nav></section><section id=callout><header><h1>Callout</h1><p class=lead>Make sure people get the message.</p></header><div class=callout><div class=callout-content><p>I've got two things to say...</p></div><div class=callout-content><p>1. This is a callout</p></div><div class=callout-content><p>2. That is all</p></div><div class=callout-footer><img class=avatar src="http://placehold.it"> Barry</div></div><div class="callout callout-primary"><div class=callout-content><p>LISTEN TO ME!!!</p></div><div class=callout-footer><img class=avatar src="http://placehold.it"> Barry</div></div><div class="callout callout-right"><div class=callout-content><p>Let's talk about sex, baby</p><p>Let's talk about you and me</p><p>Let's talk about all the good things</p><p>And the bad things that may be</p><p>Let's talk about sex</p></div><div class=callout-footer><img class=avatar src="http://placehold.it"> Jon</div></div><div class="callout callout-primary"><div class="callout-content callout-media"><img src="http://33.media.tumblr.com/e7bedc2a98bbe709baf6a1a622d1485c/tumblr_nnugzekZ7x1ru5h8co1_540.gif"></div><div class=callout-footer><img class=avatar src="http://placehold.it"> Barry</div></div></section><section id=collapse><header><h1>Collapse</h1><p class=lead>or accordions... if that's what you call them?</p></header><ul class=collapse-list><li id=item-1 class=collapse-item><h4 class=collapse-title><a href=#item-1>Collapse item one</a></h4><div class=collapse-content><p>This is the content</p></div></li><li id=item-2 class=collapse-item><h4 class=collapse-title><a href=#item-2>Collapse item two</a></h4><div class=collapse-content><p>This is the content</p></div></li><li id=item-3 class=collapse-item><h4 class=collapse-title><a href=#item-3>Collapse item three</a></h4><div class=collapse-content><p>This has loads of content.</p><h6>Defintion</h6><p><em>v. col·lapsed, col·laps·ing, col·laps·es</em></p><ol><li>To fall down or inward suddenly; cave in.</li><li>To break down suddenly in strength or health and thereby cease to function: a monarchy that collapsed.</li><li>To fold compactly: chairs that collapse for storage.</li></ol></div></li></ul></section><section id=context><header><h1>Context</h1><p class=lead>Give images some context</p></header><div class="context-display context-browser" data-url=lassoplan.com><img src=http://f.cl.ly/items/2i1c3Z0x1N0J3U1F3m2v/Lesson%20Planning%20App%20%7C%20LassoPlan%202015-02-11%2014-07-45.png></div><div class="context-display context-phone"><img src=http://f.cl.ly/items/3K181t2g2Q1H3x0z282X/Notes%20%7C%20LassoPlan%202015-02-11%2014-01-08.png></div><div class="context-display context-tablet"><img src=http://f.cl.ly/items/3v2Y312G2B253V131K37/3rd%20September%20%7C%20LassoPlan%202015-02-11%2014-08-51.png></div></section><section id=code><header><h1>Code</h1></header><figure class=highlight><pre><code class=language-ruby data-lang=ruby>&lt;p id=&quot;foo&quot; class=&quot;bar&quot;&gt;
+    c0.2-2.4,1.5-18.6-1.2-21.7c0.3-1,0.6-2.2,0.6-3.2c1-0.3,1.9-1,2.6-2.4c1.4-2.8,1.2-5.5-0.1-8.3C65.6,6.1,61.9-0.1,61.9,0z"/>
+  <path fill="#FFFFFF" d="M60.7,6.4c0.1-0.3,0.2-0.6,0.3-0.9C60.8,4.2,60.6,6,60.7,6.4z"/>
+</g>
+</svg>
+
+        </div>
+      </div>
+      <ul class="masthead-nav">
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#devices">Devices</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#the-lab">Lab</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#donate">Donate</a>
+        </li>
+      </ul>
+      <a class="masthead-booking" href="#booking">Booking</a>
+    </nav>
+
+    <main role="main">
+      <h1>Styleguide - Components</h1>
+
+<nav class="nav-block">
+  <ul>
+    <li>
+      <a href="/styleguide">Base</a>
+    </li>
+    <li class="active">
+      <a href="components.html">Components</a>
+    </li>
+    <li>
+      <a href="prototypes">Prototypes</a>
+    </li>
+  </ul>
+</nav>
+
+<menu>
+  <li><a href="#buttons">Buttons</a></li>
+  <li><a href="#skin">Skin</a></li>
+  <li><a href="#images">Images</a></li>
+  <li><a href="#cards">Cards</a></li>
+  <li><a href="#nav">Nav</a></li>
+  <li><a href="#callout">Callout</a></li>
+  <li><a href="#collapse">Collapse</a></li>
+  <li><a href="#context">Context</a></li>
+</menu>
+
+<section id="buttons">
+  <header>
+      <h1>Buttons</h1>
+      <p class="lead">Some text about components.</p>
+  </header>
+  <h2>Default</h2>
+  <button type="button">Button</button>
+  <button type="button" class="btn">Button.btn</button>
+  <button type="button" class="btn" disabled>Button.btn:disabled</button>
+  <a class="btn">a.btn</a>
+  <a class="btn active">a.btn.active</a>
+  <a class="btn disabled">a.btn.disabled</a>
+
+  <h2>Primary</h2>
+  <button type="submit">Button</button>
+  <button type="button" class="btn btn-primary">Button.btn.primary</button>
+  <button type="button" class="btn btn-primary" disabled>Button.btn-primary:disabled</button>
+  <a class="btn btn-primary">a.btn.btn-primary</a>
+  <a class="btn btn-primary active">a.btn-primary.active</a>
+  <a class="btn btn-primary disabled">a.btn-primary.disabled</a>
+</section>
+
+<section id="skin">
+  <header>
+    <h1>Skin</h1>
+  </header>
+  <div class="card skin skin-brand">
+    <h2>.skin-brand</h2>
+    <p>This is primary content</p>
+    <a class="btn">a.btn</a>
+    <button type="submit">Button</button>
+  </div>
+  <div class="card skin skin-dark">
+    <h2>.skin-dark</h2>
+    <p>This is secondary content</p>
+    <a class="btn">a.btn</a>
+    <button type="submit">Button</button>
+  </div>
+  <div class="card skin skin-light">
+    <h2>.skin-light</h2>
+    <p>This is tertiary content</p>
+    <a class="btn">a.btn</a>
+    <button type="submit">Button</button>
+  </div>
+</section>
+
+
+<section id="card">
+  <header>
+    <h1>Cards</h1>
+    <p class="lead">Super flexible pattern</p>
+  </header>
+
+  <h2>Static</h2>
+  <div class="card">
+    Default .card
+  </div>
+
+  <div class="card skin-brand">
+    Branded .card
+  </div>
+
+  <div class="card skin-light">
+    Light .card
+  </div>
+
+  <div class="card skin-dark">
+    Light .card
+  </div>
+
+  <div href="#" class="card">
+    <h3>Card</h3>
+    <p>with lots of content</p>
+    <a href="#" class="btn">And a button</a>
+  </div>
+
+  <h2>Links and Buttons</h2>
+
+  <a href="#" class="card">
+    <h3>Card</h3>
+    <p>that links to something</p>
+  </a>
+
+  <a href="#" class="card btn">
+    <h3>Card Button</h3>
+    <p>yup this is a button now</p>
+  </a>
+
+  <a href="#" class="card btn btn-primary">
+    <h3>Card Button</h3>
+    <p>yup this is a button now</p>
+  </a>
+
+  <h2>Alerts</h2>
+
+  <div class="card alert-info">
+    <h3>Information</h3>
+    <p>This is some information</p>
+  </div>
+
+  <div class="card alert-warning">
+    <h3>Card Button</h3>
+    <p>This is a warning</p>
+  </div>
+
+</div>
+
+<section id="nav">
+  <header>
+    <h1>Nav</h1>
+  </header>
+
+  <nav class="nav-block">
+    <ul>
+      <li>
+        <a href="#">Join our team</a>
+      </li>
+      <li>
+        <a href="#">See where we work</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+<section id="callout">
+  <header>
+    <h1>Callout</h1>
+    <p class="lead">Make sure people get the message.</p>
+  </header>
+
+  <div class="callout">
+    <div class="callout-content">
+      <p>I've got two things to say...</p>
+    </div>
+    <div class="callout-content">
+      <p>1. This is a callout</p>
+    </div>
+    <div class="callout-content">
+      <p>2. That is all</p>
+    </div>
+    <div class="callout-footer">
+      <img class="avatar" src="http://placehold.it"/>
+      Barry
+    </div>
+  </div>
+
+  <div class="callout callout-primary">
+    <div class="callout-content">
+      <p>LISTEN TO ME!!!</p>
+    </div>
+    <div class="callout-footer">
+      <img class="avatar" src="http://placehold.it"/>
+      Barry
+    </div>
+  </div>
+
+  <div class="callout callout-right">
+    <div class="callout-content">
+      <p>Let's talk about sex, baby</p>
+      <p>Let's talk about you and me</p>
+      <p>Let's talk about all the good things</p>
+      <p>And the bad things that may be</p>
+      <p>Let's talk about sex</p>
+    </div>
+    <div class="callout-footer">
+      <img class="avatar" src="http://placehold.it"/>
+      Jon
+    </div>
+  </div>
+
+  <div class="callout callout-primary">
+    <div class="callout-content callout-media">
+      <img src="http://33.media.tumblr.com/e7bedc2a98bbe709baf6a1a622d1485c/tumblr_nnugzekZ7x1ru5h8co1_540.gif"/>
+    </div>
+    <div class="callout-footer">
+      <img class="avatar" src="http://placehold.it"/>
+      Barry
+    </div>
+  </div>
+
+</section>
+
+<section id="collapse">
+  <header>
+    <h1>Collapse</h1>
+    <p class="lead">or accordions... if that's what you call them?</p>
+  </header>
+  <ul class="collapse-list">
+    <li id="item-1" class="collapse-item">
+      <h4 class="collapse-title"><a href="#item-1">Collapse item one</a></h4>
+      <div class="collapse-content">
+        <p>This is the content</p>
+      </div>
+    </li>
+    <li id="item-2" class="collapse-item">
+      <h4 class="collapse-title"><a href="#item-2">Collapse item two</a></h4>
+      <div class="collapse-content">
+        <p>This is the content</p>
+      </div>
+    </li>
+    <li id="item-3" class="collapse-item">
+      <h4 class="collapse-title"><a href="#item-3">Collapse item three</a></h4>
+      <div class="collapse-content">
+        <p>This has loads of content.</p>
+        <h6>Defintion</h6>
+        <p><em>v. col·lapsed, col·laps·ing, col·laps·es</em></p>
+        <ol>
+          <li>To fall down or inward suddenly; cave in.</li>
+          <li>To break down suddenly in strength or health and thereby cease to function: a monarchy that collapsed.</li>
+          <li>To fold compactly: chairs that collapse for storage.</li>
+        </ol>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="context">
+
+  <header>
+    <h1>Context</h1>
+    <p class="lead">Give images some context</p>
+  </header>
+
+  <div class="context-display context-browser" data-url="lassoplan.com">
+    <img src="http://f.cl.ly/items/2i1c3Z0x1N0J3U1F3m2v/Lesson%20Planning%20App%20%7C%20LassoPlan%202015-02-11%2014-07-45.png">
+  </div>
+
+  <div class="context-display context-phone">
+    <img src="http://f.cl.ly/items/3K181t2g2Q1H3x0z282X/Notes%20%7C%20LassoPlan%202015-02-11%2014-01-08.png">
+  </div>
+
+  <div class="context-display context-tablet">
+    <img src="http://f.cl.ly/items/3v2Y312G2B253V131K37/3rd%20September%20%7C%20LassoPlan%202015-02-11%2014-08-51.png">
+  </div>
+</section>
+
+<section id="code">
+  <header>
+    <h1>Code</h1>
+  </header>
+  <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">&lt;p id=&quot;foo&quot; class=&quot;bar&quot;&gt;
   make code look good
-&lt;/p&gt;</code></pre></figure></section><section id=breakout><header><h1>Breakout <small>Proto</small></h1></header><div class="skin skin-light breakout"><div class=breakout-content><h2>Breakout</h2><p>This is handy for ripping stuff outside the main content</p></div></div></section></section></main><script src=/assets/javascript/all.min.9c65cf6b.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+&lt;/p&gt;</code></pre></figure>
+</section>
+
+<section id="breakout">
+  <header>
+    <h1>Breakout <small>Proto</small></h1>
+  </header>
+  <div class="skin skin-light breakout">
+    <div class="breakout-content">
+      <h2>Breakout</h2>
+      <p>This is handy for ripping stuff outside the main content</p>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- JS -->
+    <script src="/assets/javascript/all.min.9c65cf6b.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-76488535-1', 'auto');
-      ga('send', 'pageview');</script></body></html>
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

@@ -1,24 +1,657 @@
-<!DOCTYPE html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><link rel=apple-touch-icon sizes=57x57 href=/apple-touch-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-touch-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-touch-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-touch-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-touch-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-touch-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-touch-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-touch-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon-180x180.png><link rel=icon type=image/png href=/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/android-chrome-192x192.png sizes=192x192><link rel=icon type=image/png href=/favicon-96x96.png sizes=96x96><link rel=icon type=image/png href=/favicon-16x16.png sizes=16x16><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=msapplication-TileImage content=/mstile-144x144.png><meta name=theme-color content=#4dadff><link href=//gmpg.org/xfn/11 rel=profile><meta http-equiv=content-type content="text/html; charset=utf-8"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Styleguide &middot; candl.io</title><link rel=stylesheet href=/assets/stylesheets/style.min.514f65e1.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=/assets/images/touch/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/assets/favicon.ico></head><body><nav class=masthead role=navigation><div class=masthead-brand><div class=masthead-logo><svg version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px width=110px height=48px viewbox="0 0 110 48" enable-background="new 0 0 110 48" xml:space=preserve><g><path fill=#FFFFFF d="M11.3,27.1c0.5,0.2,5.5,9,6.5,4c1.1-5.4-5.6-7.7-9.1-9C-2.6,23.9-2.9,44.4,7.9,47.5c4,1.1,10.7-1.9,9.8-7.2
-    c-0.9-6-4.4,0.6-5.3,2c-3.3,5.4-7.7-2.6-7.9-5.8C4.5,33.4,6.6,24.6,11.3,27.1z"><path fill=#FFFFFF d="M29.9,33.6c0,0.1,0,0.2,0,0.3c0,0,0.1,0.1,0.1,0.1C30.1,34,29.9,33.4,29.9,33.6z"><path fill=#FFFFFF d="M31.4,20.9C31.7,20.9,31.8,20.9,31.4,20.9C30,20.9,30.8,20.9,31.4,20.9c-3.3,0-4.3,7.8-5,9.9
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#4dadff">
+
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Styleguide &middot; candl.io
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/style.min.514f65e1.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/touch/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+</head>
+
+
+  <body>
+    <nav class="masthead" role="navigation">
+      <div class="masthead-brand">
+        <div class="masthead-logo">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="110px" height="48px" viewBox="0 0 110 48" enable-background="new 0 0 110 48" xml:space="preserve">
+<g>
+  <path fill="#FFFFFF" d="M11.3,27.1c0.5,0.2,5.5,9,6.5,4c1.1-5.4-5.6-7.7-9.1-9C-2.6,23.9-2.9,44.4,7.9,47.5c4,1.1,10.7-1.9,9.8-7.2
+    c-0.9-6-4.4,0.6-5.3,2c-3.3,5.4-7.7-2.6-7.9-5.8C4.5,33.4,6.6,24.6,11.3,27.1z"/>
+  <path fill="#FFFFFF" d="M29.9,33.6c0,0.1,0,0.2,0,0.3c0,0,0.1,0.1,0.1,0.1C30.1,34,29.9,33.4,29.9,33.6z"/>
+  <path fill="#FFFFFF" d="M31.4,20.9C31.7,20.9,31.8,20.9,31.4,20.9C30,20.9,30.8,20.9,31.4,20.9c-3.3,0-4.3,7.8-5,9.9
     c-1.6,4.4-3.4,8.8-5.4,13.1c-2.1,4.7,4.4,1.2,5.6-1.5c1.6-3.7,2-4.5,6.1-4.7c3.3-0.1,3.7,5,3.7,7.8c0.1,4.7,3.6,0.8,3.9-1.9
     C40.6,39.3,37.4,21.1,31.4,20.9z M29.9,34c0,0-0.1,0-0.1-0.1c0-0.1,0-0.2,0-0.3c0.2-1.3,1.4-5.5,1.9-5.6c0.7-0.1,2,5.1,2,5.4
-    C33.8,34.1,30.6,34.3,29.9,34z"><path fill=#FFFFFF d="M74.1,27c0,0.1,0,0.3,0,0.4C74,29.2,74.5,27,74.1,27z"><path fill=#FFFFFF d="M77.1,21.3c-2.7,0-4.3,0-7,0c-0.6,0.4-0.6,0.5-0.5,0.4c-1.5,1.8-0.7,7.1-0.8,9c-0.2,4.6-0.2,9.3-0.4,13.9
+    C33.8,34.1,30.6,34.3,29.9,34z"/>
+  <path fill="#FFFFFF" d="M74.1,27c0,0.1,0,0.3,0,0.4C74,29.2,74.5,27,74.1,27z"/>
+  <path fill="#FFFFFF" d="M77.1,21.3c-2.7,0-4.3,0-7,0c-0.6,0.4-0.6,0.5-0.5,0.4c-1.5,1.8-0.7,7.1-0.8,9c-0.2,4.6-0.2,9.3-0.4,13.9
     c-0.3,5.5,5.9,2,8.6,1.3c8.2-2,12.1-13.3,8.1-20.4C83.4,22.4,80.5,21.2,77.1,21.3z M78.9,41c-1.8,2.2-6.5,4.9-5.8,0
-    c0.7-4.4,0.6-9.1,0.9-13.5c0-0.1,0-0.3,0-0.4c3.2,0,6.7-3.9,8.3,1.7C83.7,33.1,81.6,37.7,78.9,41z"><path fill=#FFFFFF d="M100.1,42.8c-4.1-0.1-4.1,0.7-4.2-3.9c-0.1-3.7,2.9-16.2-2.1-17.8c1.1,0.1,2.2,0.1-0.8-0.2
-    c-0.6,0-0.6,0-0.3,0.1c-2.9,1.4-1.8,23.2-1,26.1c0.6,2.3,6.3,0,7.3-0.1c3.6-0.2,6.2,0.8,9.9,0C113.7,44.3,101,42.8,100.1,42.8z"><path fill=#FFFFFF d="M61.9,0c-0.9,1.7-1.2,3.6-0.9,5.5c-0.2,1-0.3,1.1-0.3,0.9c-1.2,3-5.2,7.2-2.2,9.5c1.1,0.8,2.1,1.4,3.2,1.6
+    c0.7-4.4,0.6-9.1,0.9-13.5c0-0.1,0-0.3,0-0.4c3.2,0,6.7-3.9,8.3,1.7C83.7,33.1,81.6,37.7,78.9,41z"/>
+  <path fill="#FFFFFF" d="M100.1,42.8c-4.1-0.1-4.1,0.7-4.2-3.9c-0.1-3.7,2.9-16.2-2.1-17.8c1.1,0.1,2.2,0.1-0.8-0.2
+    c-0.6,0-0.6,0-0.3,0.1c-2.9,1.4-1.8,23.2-1,26.1c0.6,2.3,6.3,0,7.3-0.1c3.6-0.2,6.2,0.8,9.9,0C113.7,44.3,101,42.8,100.1,42.8z"/>
+  <path fill="#FFFFFF" d="M61.9,0c-0.9,1.7-1.2,3.6-0.9,5.5c-0.2,1-0.3,1.1-0.3,0.9c-1.2,3-5.2,7.2-2.2,9.5c1.1,0.8,2.1,1.4,3.2,1.6
     c-0.3,0.9-0.6,1.9-0.7,2.8c-0.2,0.1-0.2,0.1,0,0.1c0,0.1,0,0.2,0,0.3c-2.3,2.8-1,15.3-1.1,17.6c-4-1.5-6.9-12-9-15.5
     c-4.8-7.6-5.4,3.4-5.6,6.7c-0.2,4.4-0.6,8.7-0.7,13.1c0,1,0.6,6,2.5,2.9c1.7-2.8,0-13.9,2.2-15.1c1-0.5,13.1,28.5,14.8,12
-    c0.2-2.4,1.5-18.6-1.2-21.7c0.3-1,0.6-2.2,0.6-3.2c1-0.3,1.9-1,2.6-2.4c1.4-2.8,1.2-5.5-0.1-8.3C65.6,6.1,61.9-0.1,61.9,0z"><path fill=#FFFFFF d="M60.7,6.4c0.1-0.3,0.2-0.6,0.3-0.9C60.8,4.2,60.6,6,60.7,6.4z"></g></svg></div></div><ul class=masthead-nav><li class=masthead-nav-item><a class=masthead-nav-link href=#devices>Devices</a></li><li class=masthead-nav-item><a class=masthead-nav-link href=#the-lab>Lab</a></li><li class=masthead-nav-item><a class=masthead-nav-link href=#donate>Donate</a></li></ul><a class=masthead-booking href=#booking>Booking</a></nav><main role=main><header class=hero><h1 class=hero-title>Styleguide</h1></header><div class=wrapper><nav class="nav-block btn-group"><ul><li class=active><a class=btn href=/styleguide>Base</a></li><li><a class=btn href=/styleguide/components.html>Components</a></li></ul></nav><menu><li><a href=#type>Type</a></li><li><a href=#forms>Forms</a></li></menu><section id=type><header><h1>Typography</h1><p class=lead>Some text about typography.</p></header><h2>Sections <a href=#>Linked</a></h2><p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p><p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p><h3>Third-Level Header <a href=#>Linked</a></h3><p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the <code>h2</code> header in a document hierarchy.</p><h4>Fourth-Level Header <a href=#>Linked</a></h4><p>The header above is an <code>h4</code> element, which may be used for any form of page-level header which falls below the <code>h3</code> header in a document hierarchy.</p><h5>Fifth-Level Header <a href=#>Linked</a></h5><p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the <code>h4</code> header in a document hierarchy.</p><h6>Sixth-Level Header <a href=#>Linked</a></h6><p>The header above is an <code>h6</code> element, which may be used for any form of page-level header which falls below the <code>h5</code> header in a document hierarchy.</p><h2 id=grouping>Grouping content</h2><h3>Paragraphs</h3><p>All paragraphs are wrapped in <code>p</code> tags. Additionally, <code>p</code> elements can be wrapped with a <code>blockquote</code> element <em>if the <code>p</code> element is indeed a quote</em>. Historically, <code>blockquote</code> has been used purely to force indents, but this is now achieved using CSS. Reserve <code>blockquote</code> for quotes.</p><h3>Horizontal rule</h3><p>The <code>hr</code> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book. The following extract from <cite>Pandora’s Star</cite> by Peter F. Hamilton shows two paragraphs that precede a scene change and the paragraph that follows it:</p><div class=example><p>Dudley was ninety-two, in his second life, and fast approaching time for another rejuvenation. Despite his body having the physical age of a standard fifty-year-old, the prospect of a long degrading campaign within academia was one he regarded with dread. For a supposedly advanced civilization, the Intersolar Commonwearth could be appallingly backward at times, not to mention cruel.</p><p><i>Maybe it won’t be that bad</i>, he told himself. The lie was comforting enough to get him through the rest of the night’s shift.</p><hr><p>The Carlton AllLander drove Dudley home just after dawn. Like the astronomer, the vehicle was old and worn, but perfectly capable of doing its job. It had a cheap diesel engine, common enough on a semi-frontier world like Gralmond, although its drive array was a thoroughly modern photoneural processor. With its high suspension and deep-tread tyres it could plough along the dirt track to the observatory in all weather and seasons, including the metre-deep snow of Gralmond’s winters.</p></div><h3>Pre-formatted text</h3><p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here’s an example showing the printable characters of <abbr>ASCII</abbr>:</p><div class=example><pre><samp>  ! " # $ % &amp; ' ( ) * + , - . /
+    c0.2-2.4,1.5-18.6-1.2-21.7c0.3-1,0.6-2.2,0.6-3.2c1-0.3,1.9-1,2.6-2.4c1.4-2.8,1.2-5.5-0.1-8.3C65.6,6.1,61.9-0.1,61.9,0z"/>
+  <path fill="#FFFFFF" d="M60.7,6.4c0.1-0.3,0.2-0.6,0.3-0.9C60.8,4.2,60.6,6,60.7,6.4z"/>
+</g>
+</svg>
+
+        </div>
+      </div>
+      <ul class="masthead-nav">
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#devices">Devices</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#the-lab">Lab</a>
+        </li>
+        <li class="masthead-nav-item">
+          <a class="masthead-nav-link" href="#donate">Donate</a>
+        </li>
+      </ul>
+      <a class="masthead-booking" href="#booking">Booking</a>
+    </nav>
+
+    <main role="main">
+      <header class="hero">
+    <h1 class="hero-title">Styleguide</h1>
+</header>
+
+<div class="wrapper">
+
+  <nav class="nav-block btn-group">
+    <ul>
+      <li class="active">
+        <a class="btn" href="/styleguide">Base</a>
+      </li>
+      <li>
+        <a class="btn" href="/styleguide/components.html">Components</a>
+      </li>
+    </ul>
+  </nav>
+
+  <menu>
+    <li><a href="#type">Type</a></li>
+    <li><a href="#forms">Forms</a></li>
+  </menu>
+
+  <section id="type">
+
+    <header>
+      <h1>Typography</h1>
+      <p class="lead">Some text about typography.</p>
+    </header>
+
+    <h2>Sections <a href="#">Linked</a></h2>
+    <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
+    <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
+
+    <h3>Third-Level Header <a href="#">Linked</a></h3>
+    <p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the <code>h2</code> header in a document hierarchy.</p>
+    <h4>Fourth-Level Header <a href="#">Linked</a></h4>
+    <p>The header above is an <code>h4</code> element, which may be used for any form of page-level header which falls below the <code>h3</code> header in a document hierarchy.</p>
+    <h5>Fifth-Level Header <a href="#">Linked</a></h5>
+    <p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the <code>h4</code> header in a document hierarchy.</p>
+    <h6>Sixth-Level Header <a href="#">Linked</a></h6>
+    <p>The header above is an <code>h6</code> element, which may be used for any form of page-level header which falls below the <code>h5</code> header in a document hierarchy.</p>
+
+    <h2 id="grouping">Grouping content</h2>
+    <h3>Paragraphs</h3>
+    <p>All paragraphs are wrapped in <code>p</code> tags. Additionally, <code>p</code> elements can be wrapped with a <code>blockquote</code> element <em>if the <code>p</code> element is indeed a quote</em>. Historically, <code>blockquote</code> has been used purely to force indents, but this is now achieved using CSS. Reserve <code>blockquote</code> for quotes.</p>
+
+    <h3>Horizontal rule</h3>
+    <p>The <code>hr</code> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book. The following extract from <cite>Pandora’s Star</cite> by Peter F. Hamilton shows two paragraphs that precede a scene change and the paragraph that follows it:</p>
+    <div class="example">
+        <p>Dudley was ninety-two, in his second life, and fast approaching time for another rejuvenation. Despite his body having the physical age of a standard fifty-year-old, the prospect of a long degrading campaign within academia was one he regarded with dread. For a supposedly advanced civilization, the Intersolar Commonwearth could be appallingly backward at times, not to mention cruel.</p>
+        <p><i>Maybe it won’t be that bad</i>, he told himself. The lie was comforting enough to get him through the rest of the night’s shift.</p>
+        <hr>
+        <p>The Carlton AllLander drove Dudley home just after dawn. Like the astronomer, the vehicle was old and worn, but perfectly capable of doing its job. It had a cheap diesel engine, common enough on a semi-frontier world like Gralmond, although its drive array was a thoroughly modern photoneural processor. With its high suspension and deep-tread tyres it could plough along the dirt track to the observatory in all weather and seasons, including the metre-deep snow of Gralmond’s winters.</p>
+    </div>
+
+    <h3>Pre-formatted text</h3>
+    <p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here’s an example showing the printable characters of <abbr>ASCII</abbr>:</p>
+
+    <div class="example">
+        <pre><samp>  ! " # $ % &amp; ' ( ) * + , - . /
         0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
         @ A B C D E F G H I J K L M N O
         P Q R S T U V W X Y Z [ \ ] ^ _
         ` a b c d e f g h i j k l m n o
-        p q r s t u v w x y z { | } ~</samp></pre></div><h3>Blockquotes</h3><p>The <code>blockquote</code> element represents a section that is being quoted from another source.</p><div class=example><blockquote cite=http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206><p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p></blockquote></div><h3>Ordered list</h3><p>The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3… a,b,c… i,ii,iii… and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).</p><div class=example><ol><li>This is an ordered list.</li><li>This is the second item, which contains a sub list<ol><li>This is the sub list, which is also ordered.</li><li>It has two items.</li></ol></li><li>This is the final item on this list.</li></ol></div><h3>Unordered list</h3><p>The <code>ul</code> element denotes an unordered list (ie. a list of loose items that don’t require numbering, or a bulleted list). Again, each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items. Here is an example list showing the constituent parts of the British Isles:</p><div class=example><ul><li>United Kingdom of Great Britain and Northern Ireland:<ul><li>England</li><li>Scotland</li><li>Wales</li><li>Northern Ireland</li></ul></li><li>Republic of Ireland</li><li>Isle of Man</li><li>Channel Islands:<ul><li>Bailiwick of Guernsey</li><li>Bailiwick of Jersey</li></ul></li></ul></div><p>Sometimes we may want each list item to contain block elements, typically a paragraph or two.</p><div class=example><ul><li><p>The British Isles is an archipelago consisting of the two large islands of Great Britain and Ireland, and many smaller surrounding islands.</p></li><li><p>Great Britain is the largest island of the archipelago. Ireland is the second largest island of the archipelago and lies directly to the west of Great Britain.</p></li><li><p>The full list of islands in the British Isles includes over 1,000 islands, of which 51 have an area larger than 20 km<sup>2</sup>.</p></li></ul></div><h3>Definition list</h3><p>The <code>dl</code> element is for another type of list called a definition list. Instead of list items, the content of a <code>dl</code> consists of <code>dt</code> (Definition Term) and <code>dd</code> (Definition description) pairs. Though it may be called a “definition list”, <code>dl</code> can apply to other scenarios where a parent/child relationship is applicable. For example, it may be used for marking up dialogues, with each <code>dt</code> naming a speaker, and each <code>dd</code> containing his or her words.</p><div class=example><dl><dt>This is a term.</dt><dd>This is the definition of that term, which both live in a <code>dl</code>.</dd><dt>Here is another term.</dt><dd>And it gets a definition too, which is this line.</dd><dt>Here is term that shares a definition with the term below.</dt><dt>Here is a defined term.</dt><dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd></dl></div><h3>Figures</h3><p>Figures are usually used to refer to images:</p><div class=example><figure><img src=/images/tech.jpg alt="Example image"><figcaption>This is a placeholder image, with supporting caption.</figcaption></figure></div><p>Here, a part of a poem is marked up using figure:</p><div class=example><figure><p>‘Twas brillig, and the slithy toves<br>Did gyre and gimble in the wabe;<br>All mimsy were the borogoves,<br>And the mome raths outgrabe.</p><figcaption><cite>Jabberwocky</cite> (first verse). Lewis Carroll, 1832-98</figcaption></figure></div><p>When you wish to cite the source of a quote, you should do so using a figure also:</p><div class=example><blockquote cite=http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206><p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p></blockquote><figcaption>Winston Churchill, in <cite><a href=http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206>a speech to the House of Commons</a></cite>. 11th November 1947</figcaption></div><h2 id=text>Text-level Semantics</h2><p>There are a number of inline <abbr title="HyperText Markup Language">HTML</abbr> elements you may use anywhere within other elements.</p><h3>Links and anchors</h3><p>The <code>a</code> element is used to hyperlink text, be that to another page, a named fragment on the current page or any other location on the web. Example:</p><div class=example><p><a href="/">Go to the home page</a> or <a href=#banner>return to the top of this page</a>.</p></div><h3>Stressed emphasis</h3><p>The <code>em</code> element is used to denote text with stressed emphasis, i.e., something you’d pronounce differently. Where italicizing is required for stylistic differentiation, the <code>i</code> element may be preferable. Example:</p><div class=example><p>You simply <em>must</em> try the negitoro maki!</p></div><h3>Strong importance</h3><p>The <code>strong</code> element is used to denote text with strong importance. Where bolding is used for stylistic differentiation, the <code>b</code> element may be preferable. Example:</p><div class=example><p><strong>Don’t</strong> stick nails in the electrical outlet.</p></div><h3>Small print</h3><p>The <small>small</small> element is used to represent disclaimers, caveats, legal restrictions, or copyrights (commonly referred to as ‘small print’). It can also be used for attributions or satisfying licensing requirements. Example:</p><div class=example><p><small>Copyright © 1922-2011 Acme Corporation. All Rights Reserved.</small></p></div><h3>Strikethrough</h3><p>The <code>s</code> element is used to represent content that is no longer accurate or relevant. When indicating document edits i.e., marking a span of text as having been removed from a document, use the <code>del</code> element instead. Example:</p><div class=example><p><s>Recommended retail price: £3.99 per bottle</s><br><strong>Now selling for just £2.99 a bottle!</strong></p></div><h3>Citations</h3><p>The <code>cite</code> element is used to represent the title of a work (e.g. a book, essay, poem, song, film, TV show, sculpture, painting, musical, exhibition, etc). This can be a work that is being quoted or referenced in detail (i.e. a citation), or it can just be a work that is mentioned in passing. Example:</p><div class=example><p><cite>Universal Declaration of Human Rights</cite>, United Nations, December 1948. Adopted by General Assembly resolution 217 A (III).</p></div><h3>Inline quotes</h3><p>The <code>q</code> element is used for quoting text inline. Example showing nested quotations:</p><div class=example><p>John said, <q>I saw Lucy at lunch, she told me <q>Mary wants you to get some ice cream on your way home</q>. I think I will get some at Ben and Jerry’s, on Gloucester Road.</q></p></div><h3>Definition</h3><p>The <code>dfn</code> element is used to highlight the first use of a term. The <code>title</code> attribute can be used to describe the term. Example:</p><div class=example><p>Bob’s <dfn title=Dog>canine</dfn> mother and <dfn title=Horse>equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p></div><h3>Abbreviation</h3><p>The <code>abbr</code> element is used for any abbreviated text, whether it be acronym, initialism, or otherwise. Generally, it’s less work and useful (enough) to mark up only the first occurrence of any particular abbreviation on a page, and ignore the rest. Any text in the <code>title</code> attribute will appear when the user’s mouse hovers the abbreviation (although notably, this does not work in Internet Explorer for Windows). Example abbreviations:</p><div class=example><p><abbr title="British Broadcasting Corportation">BBC</abbr>, <abbr title="HyperText Markup Language">HTML</abbr>, and <abbr title=Staffordshire>Staffs.</abbr></p></div><h3>Time</h3><p>The <code>time</code> element is used to represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset. Example:</p><div class=example><p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime=1952-02-6>6</time> and <time datetime=1952-02-7>7 February 1952</time>, after the death of her father, King George VI.</p></div><h3>Code</h3><p>The <code>code</code> element is used to represent fragments of computer code. Useful for technology-oriented sites, not so useful otherwise. Example:</p><div class=example><p>When you call the <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow.</p></div><p>Used in conjunction with the <code>pre</code> element:</p><div class=example><pre><code>function getJelly() {
+        p q r s t u v w x y z { | } ~</samp></pre>
+    </div>
+
+    <h3>Blockquotes</h3>
+    <p>The <code>blockquote</code> element represents a section that is being quoted from another source.</p>
+    <div class="example">
+        <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
+            <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+        </blockquote>
+    </div>
+
+    <h3>Ordered list</h3>
+    <p>The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3… a,b,c… i,ii,iii… and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).</p>
+    <div class="example">
+        <ol>
+            <li>This is an ordered list.</li>
+            <li>
+                This is the second item, which contains a sub list
+                <ol>
+                    <li>This is the sub list, which is also ordered.</li>
+                    <li>It has two items.</li>
+                </ol>
+            </li>
+            <li>This is the final item on this list.</li>
+        </ol>
+    </div>
+
+    <h3>Unordered list</h3>
+    <p>The <code>ul</code> element denotes an unordered list (ie. a list of loose items that don’t require numbering, or a bulleted list). Again, each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items. Here is an example list showing the constituent parts of the British Isles:</p>
+    <div class="example">
+        <ul>
+            <li>
+                United Kingdom of Great Britain and Northern Ireland:
+                <ul>
+                    <li>England</li>
+                    <li>Scotland</li>
+                    <li>Wales</li>
+                    <li>Northern Ireland</li>
+                </ul>
+            </li>
+            <li>Republic of Ireland</li>
+            <li>Isle of Man</li>
+            <li>
+                Channel Islands:
+                <ul>
+                    <li>Bailiwick of Guernsey</li>
+                    <li>Bailiwick of Jersey</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>Sometimes we may want each list item to contain block elements, typically a paragraph or two.</p>
+    <div class="example">
+        <ul>
+            <li>
+                <p>The British Isles is an archipelago consisting of the two large islands of Great Britain and Ireland, and many smaller surrounding islands.</p>
+            </li>
+            <li>
+                <p>Great Britain is the largest island of the archipelago. Ireland is the second largest island of the archipelago and lies directly to the west of Great Britain.</p>
+            </li>
+            <li>
+                <p>The full list of islands in the British Isles includes over 1,000 islands, of which 51 have an area larger than 20 km<sup>2</sup>.</p>
+            </li>
+        </ul>
+    </div>
+
+    <h3>Definition list</h3>
+    <p>The <code>dl</code> element is for another type of list called a definition list. Instead of list items, the content of a <code>dl</code> consists of <code>dt</code> (Definition Term) and <code>dd</code> (Definition description) pairs. Though it may be called a “definition list”, <code>dl</code> can apply to other scenarios where a parent/child relationship is applicable. For example, it may be used for marking up dialogues, with each <code>dt</code> naming a speaker, and each <code>dd</code> containing his or her words.</p>
+    <div class="example">
+        <dl>
+            <dt>This is a term.</dt>
+            <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+            <dt>Here is another term.</dt>
+            <dd>And it gets a definition too, which is this line.</dd>
+            <dt>Here is term that shares a definition with the term below.</dt>
+            <dt>Here is a defined term.</dt>
+            <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+        </dl>
+    </div>
+
+    <h3>Figures</h3>
+    <p>Figures are usually used to refer to images:</p>
+    <div class="example">
+        <figure>
+            <img src="/images/tech.jpg" alt="Example image">
+            <figcaption>
+                This is a placeholder image, with supporting caption.
+            </figcaption>
+        </figure>
+    </div>
+    <p>Here, a part of a poem is marked up using figure:</p>
+    <div class="example">
+        <figure>
+            <p>‘Twas brillig, and the slithy toves<br>
+            Did gyre and gimble in the wabe;<br>
+            All mimsy were the borogoves,<br>
+            And the mome raths outgrabe.</p>
+            <figcaption>
+                <cite>Jabberwocky</cite> (first verse). Lewis Carroll, 1832-98
+            </figcaption>
+        </figure>
+    </div>
+    <p>When you  wish to cite the source of a quote, you should do so using a figure also:</p>
+    <div class="example">
+        <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
+            <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+        </blockquote>
+        <figcaption>
+            Winston Churchill, in <cite><a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a></cite>. 11th November 1947
+        </figcaption>
+    </div>
+
+    <h2 id="text">Text-level Semantics</h2>
+    <p>There are a number of inline <abbr title="HyperText Markup Language">HTML</abbr> elements you may use anywhere within other elements.</p>
+
+    <h3>Links and anchors</h3>
+    <p>The <code>a</code> element is used to hyperlink text, be that to another page, a named fragment on the current page or any other location on the web. Example:</p>
+    <div class="example">
+        <p><a href="/">Go to the home page</a> or <a href="#banner">return to the top of this page</a>.</p>
+    </div>
+
+    <h3>Stressed emphasis</h3>
+    <p>The <code>em</code> element is used to denote text with stressed emphasis, i.e., something you’d pronounce differently. Where italicizing is required for stylistic differentiation, the <code>i</code> element may be preferable. Example:</p>
+    <div class="example">
+        <p>You simply <em>must</em> try the negitoro maki!</p>
+    </div>
+
+    <h3>Strong importance</h3>
+    <p>The <code>strong</code> element is used to denote text with strong importance. Where bolding is used for stylistic differentiation, the <code>b</code> element may be preferable. Example:</p>
+    <div class="example">
+        <p><strong>Don’t</strong> stick nails in the electrical outlet.</p>
+    </div>
+
+    <h3>Small print</h3>
+    <p>The <small>small</small> element is used to represent disclaimers, caveats, legal restrictions, or copyrights (commonly referred to as ‘small print’). It can also be used for attributions or satisfying licensing requirements. Example:</p>
+    <div class="example">
+        <p><small>Copyright © 1922-2011 Acme Corporation. All Rights Reserved.</small></p>
+    </div>
+
+    <h3>Strikethrough</h3>
+    <p>The <code>s</code> element is used to represent content that is no longer accurate or relevant. When indicating document edits i.e., marking a span of text as having been removed from a document, use the <code>del</code> element instead. Example:</p>
+    <div class="example">
+        <p><s>Recommended retail price: £3.99 per bottle</s><br><strong>Now selling for just £2.99 a bottle!</strong></p>
+    </div>
+
+    <h3>Citations</h3>
+    <p>The <code>cite</code> element is used to represent the title of a work (e.g. a book, essay, poem, song, film, TV show, sculpture, painting, musical, exhibition, etc). This can be a work that is being quoted or referenced in detail (i.e. a citation), or it can just be a work that is mentioned in passing. Example:</p>
+    <div class="example">
+        <p><cite>Universal Declaration of Human Rights</cite>, United Nations, December 1948. Adopted by General Assembly resolution 217 A (III).</p>
+    </div>
+
+    <h3>Inline quotes</h3>
+    <p>The <code>q</code> element is used for quoting text inline. Example showing nested quotations:</p>
+    <div class="example">
+        <p>John said, <q>I saw Lucy at lunch, she told me <q>Mary wants you to get some ice cream on your way home</q>. I think I will get some at Ben and Jerry’s, on Gloucester Road.</q></p>
+    </div>
+
+    <h3>Definition</h3>
+    <p>The <code>dfn</code> element is used to highlight the first use of a term. The <code>title</code> attribute can be used to describe the term. Example:</p>
+    <div class="example">
+        <p>Bob’s <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
+    </div>
+
+    <h3>Abbreviation</h3>
+    <p>The <code>abbr</code> element is used for any abbreviated text, whether it be acronym, initialism, or otherwise. Generally, it’s less work and useful (enough) to mark up only the first occurrence of any particular abbreviation on a page, and ignore the rest. Any text in the <code>title</code> attribute will appear when the user’s mouse hovers the abbreviation (although notably, this does not work in Internet Explorer for Windows). Example abbreviations:</p>
+    <div class="example">
+        <p><abbr title="British Broadcasting Corportation">BBC</abbr>, <abbr title="HyperText Markup Language">HTML</abbr>, and <abbr title="Staffordshire">Staffs.</abbr></p>
+    </div>
+
+    <h3>Time</h3>
+    <p>The <code>time</code> element is used to represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset. Example:</p>
+    <div class="example">
+        <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime="1952-02-6">6</time> and <time datetime="1952-02-7">7 February 1952</time>, after the death of her father, King George VI.</p>
+    </div>
+
+    <h3>Code</h3>
+    <p>The <code>code</code> element is used to represent fragments of computer code. Useful for technology-oriented sites, not so useful otherwise. Example:</p>
+    <div class="example">
+        <p>When you call the <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow.</p>
+    </div>
+    <p>Used in conjunction with the <code>pre</code> element:</p>
+    <div class="example">
+        <pre><code>function getJelly() {
         &nbsp;&nbsp;&nbsp;&nbsp;echo $aDeliciousSnack;
-        }</code></pre></div><h3>Variable</h3><p>The <code>var</code> element is used to denote a variable in a mathematical expression or programming context, but can also be used to indicate a placeholder where the contents should be replaced with your own value. Example:</p><div class=example><p>If there are <var>n</var> pipes leading to the ice cream factory then I expect at <em>least</em> <var>n</var> flavours of ice cream to be available for purchase!</p></div><h3>Sample output</h3><p>The <code>samp</code> element is used to represent (sample) output from a program or computing system. Useful for technology-oriented sites, not so useful otherwise. Example:</p><div class=example><p>The computer said <samp>Too much cheese in tray two</samp> but I didn’t know what that meant.</p></div><h3>Keyboard entry</h3><p>The <code>kbd</code> element is used to denote user input (typically via a keyboard, although it may also be used to represent other input methods, such as voice commands). Example:</p><p></p><div class=example><p>To take a screenshot on your Mac, press <kbd>⌘ Cmd</kbd> + <kbd>⇧ Shift</kbd> + <kbd>3</kbd>.</p></div><h3>Superscript and subscript text</h3><p>The <code>sup</code> element represents a superscript and the sub element represents a <code>sub</code>. These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation. As a guide, only use these elements if their absence would change the meaning of the content. Example:</p><div class=example><p>The coordinate of the <var>i</var>th point is (<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i</var></sub></var>). For example, the 10th point has coordinate (<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>).</p><p>f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup></p></div><h3>Italicised</h3><p>The <code>i</code> element is used for text in an alternate voice or mood, or otherwise offset from the normal prose. Examples include taxonomic designations, technical terms, idiomatic phrases from another language, the name of a ship or other spans of text whose typographic presentation is typically italicised. Example:</p><div class=example><p>There is a certain <i lang=fr>je ne sais quoi</i> in the air.</p></div><h3>Emboldened</h3><p>The <code>b</code> element is used for text stylistically offset from normal prose without conveying extra importance, such as key words in a document abstract, product names in a review, or other spans of text whose typographic presentation is typically emboldened. Example:</p><div class=example><p>You enter a small room. Your <b>sword</b> glows brighter. A <b>rat</b> scurries past the corner wall.</p></div><h3>Marked or highlighted text</h3><p>The <code>mark</code> element is used to represent a run of text marked or highlighted for reference purposes. When used in a quotation it indicates a highlight not originally present but added to bring the reader’s attention to that part of the text. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its relevance to the user’s current activity. Example:</p><div class=example><p>I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.</p></div><h3 id=edits>Edits</h3><p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p><div class=example><p>She bought <del datetime=2005-05-30T13:00:00>two</del> <ins datetime=2005-05-30T13:00:00>five</ins> pairs of shoes.</p></div><h2 id=tables>Tabular data</h2><p>Tables should be used when displaying tabular data. The <code>thead</code>, <code>tfoot</code> and <code>tbody</code> elements enable you to group rows within each a table.</p><p>If you use these elements, you must use every element. They should appear in this order: <code>thead</code>, <code>tfoot</code> and <code>tbody</code>, so that browsers can render the foot before receiving all the data. You must use these tags within the table element.</p><div class=example><table><caption>The Very Best Eggnog</caption><colgroup><col style=width:50%><col style=width:25%><col style=width:25%></colgroup><thead><tr><th scope=col>Ingredients</th><th scope=col>Serves 12</th><th scope=col>Serves 24</th></tr></thead><tbody><tr><td>Milk</td><td>1 quart</td><td>2 quart</td></tr><tr><td>Cinnamon Sticks</td><td>2</td><td>1</td></tr><tr><td>Vanilla Bean, Split</td><td>1</td><td>2</td></tr><tr><td>Cloves</td><td>5</td><td>10</td></tr><tr><td>Mace</td><td>10 blades</td><td>20 blades</td></tr><tr><td>Egg Yolks</td><td>12</td><td>24</td></tr><tr><td>Cups Sugar</td><td>1 ½ cups</td><td>3 cups</td></tr><tr><td>Dark Rum</td><td>1 ½ cups</td><td>3 cups</td></tr><tr><td>Brandy</td><td>1 ½ cups</td><td>3 cups</td></tr><tr><td>Vanilla</td><td>1 tbsp</td><td>2 tbsp</td></tr><tr><td>Half-and-half or Light Cream</td><td>1 quart</td><td>2 quart</td></tr><tr><td>Freshly grated nutmeg to taste</td><td></td><td></td></tr></tbody></table></div></section><section id=forms><header><h1>Forms</h1><p class=lead>Some text about forms.</p></header><h2>Inputs</h2><p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p><h3>Basic</h3><label>Text input</label><input value="default value that goes on and on without stopping or punctuation"><label>Email input</label><input type=email placeholder=your@email.com><label>Search input</label><input type=search placeholder=Search...><label>Tel input</label><input type=tel placeholder="01234 567890"><label>URL input</label><input type=url placeholder="http://"><label>Password input</label><input type=password value=password><label>File input</label><input type=file><h3>Advanced</h3><label for=ic>Color input</label><input type=color value=#000000 id=ic><label for=in>Number input</label><input type=number value=5 max=10 min=0 id=in><label for=ir>Range input</label><input type=range value=10 id=ir><label for=idd>Date input</label><input type=date value=1970-01-01 id=idd><label for=idm>Month input</label><input type=month value=1970-01 id=idm><label for=idw>Week input</label><input type=week value=1970-W01 id=idw><label for=idt>Datetime input</label><input type=datetime value=1970-01-01T00:00:00Z id=idt><label for=idtl>Datetime-local input</label><input type=datetime-local value=1970-01-01T00:00 id=idtl><h2>Selects</h2><label>Default Select</label><select class=form-control><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label>Disabled Select</label><select disabled class=form-control><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label>Multiple Select</label><select multiple><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><h2>Radio &amp; Checkbox</h2><label class=radio><input type=radio> this is a radio input</label><label class=checkox><input type=checkbox> this is a checkbox input</label><h6>Inline</h6><label class=radio-inline><input name=radio-group type=radio> 1</label><label class=radio-inline><input name=radio-group type=radio> 2</label><label class=radio-inline><input name=radio-group type=radio> 3</label><label class=btn><input type=checkbox> Button Checkbox</label><h2>Patterns</h2><form><fieldset><legend>Login</legend><div class=form-row><label for=login-email>Email</label><input id=login-email name=login-email type=email></div><div class=form-row><label for=login-password>Password</label><input id=login-password name=login-password type=password></div><div class=form-row><label for=login-remember><input id=login-remember name=login-remember type=checkbox> Remember me</label></div><button type=submit>Login</button></fieldset></form><form class=form-horizontal><legend>Leave a comment</legend><div id=comment-form><div class=form-row><label for=author-name>Name</label><input id=author-name name=author-name> <span class="form-feedback feedback-warning">Are you sure this is your name?</span></div><div class=form-row><label for=author-email>Email</label><input id=author-email name=author-email type=email> <span class="form-feedback feedback-negative">Enter a valid email</span></div><div class=form-row><label for=author-website>Website</label><input id=author-website name=author-website type=url> <span class="form-feedback feedback-positive">Valid url</span></div><div class=form-row><label for=author-comment>Comment</label><textarea id=author-comment name=author-comment rows=5></textarea></div><button type=submit>Save</button></div></form></section></div></main><script src=/assets/javascript/all.min.9c65cf6b.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        }</code></pre>
+    </div>
+
+    <h3>Variable</h3>
+    <p>The <code>var</code> element is used to denote a variable in a mathematical expression or programming context, but can also be used to indicate a placeholder where the contents should be replaced with your own value. Example:</p>
+    <div class="example">
+        <p>If there are <var>n</var> pipes leading to the ice cream factory then I expect at <em>least</em> <var>n</var> flavours of ice cream to be available for purchase!</p>
+    </div>
+
+    <h3>Sample output</h3>
+    <p>The <code>samp</code> element is used to represent (sample) output from a program or computing system. Useful for technology-oriented sites, not so useful otherwise. Example:</p>
+    <div class="example">
+        <p>The computer said <samp>Too much cheese in tray two</samp> but I didn’t know what that meant.</p>
+    </div>
+
+    <h3>Keyboard entry</h3>
+    <p>The <code>kbd</code> element is used to denote user input (typically via a keyboard, although it may also be used to represent other input methods, such as voice commands). Example:</p><p>
+    </p><div class="example">
+        <p>To take a screenshot on your Mac, press <kbd>⌘ Cmd</kbd> + <kbd>⇧ Shift</kbd> + <kbd>3</kbd>.</p>
+    </div>
+
+    <h3>Superscript and subscript text</h3>
+    <p>The <code>sup</code> element represents a superscript and the sub element represents a <code>sub</code>. These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation. As a guide, only use these elements if their absence would change the meaning of the content. Example:</p>
+    <div class="example">
+        <p>The coordinate of the <var>i</var>th point is (<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i</var></sub></var>). For example, the 10th point has coordinate (<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>).</p>
+        <p>f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup></p>
+    </div>
+
+    <h3>Italicised</h3>
+    <p>The <code>i</code> element is used for text in an alternate voice or mood, or otherwise offset from the normal prose. Examples include taxonomic designations, technical terms, idiomatic phrases from another language, the name of a ship or other spans of text whose typographic presentation is typically italicised. Example:</p>
+    <div class="example">
+        <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+    </div>
+
+    <h3>Emboldened</h3>
+    <p>The <code>b</code> element is used for text stylistically offset from normal prose without conveying extra importance, such as key words in a document abstract, product names in a review, or other spans of text whose typographic presentation is typically emboldened. Example:</p>
+    <div class="example">
+        <p>You enter a small room. Your <b>sword</b> glows brighter. A <b>rat</b> scurries past the corner wall.</p>
+    </div>
+
+    <h3>Marked or highlighted text</h3>
+    <p>The <code>mark</code> element is used to represent a run of text marked or highlighted for reference purposes. When used in a quotation it indicates a highlight not originally present but added to bring the reader’s attention to that part of the text. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its relevance to the user’s current activity. Example:</p>
+    <div class="example">
+        <p>I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.</p>
+    </div>
+
+    <h3 id="edits">Edits</h3>
+    <p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p>
+    <div class="example">
+        <p>She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</p>
+    </div>
+
+    <h2 id="tables">Tabular data</h2>
+    <p>Tables should be used when displaying tabular data. The <code>thead</code>, <code>tfoot</code> and <code>tbody</code> elements enable you to group rows within each a table.</p>
+    <p>If you use these elements, you must use every element. They should appear in this order: <code>thead</code>, <code>tfoot</code> and <code>tbody</code>, so that browsers can render the foot before receiving all the data. You must use these tags within the table element.</p>
+
+    <div class="example">
+        <table>
+            <caption>The Very Best Eggnog</caption>
+            <colgroup>
+                <col style="width:50%">
+                <col style="width:25%">
+                <col style="width:25%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Ingredients</th>
+                    <th scope="col">Serves 12</th>
+                    <th scope="col">Serves 24</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Milk</td>
+                    <td>1 quart</td>
+                    <td>2 quart</td>
+                </tr>
+                <tr>
+                    <td>Cinnamon Sticks</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Bean, Split</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Cloves</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Mace</td>
+                    <td>10 blades</td>
+                    <td>20 blades</td>
+                </tr>
+                <tr>
+                    <td>Egg Yolks</td>
+                    <td>12</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Cups Sugar</td>
+                    <td>1 ½ cups</td>
+                    <td>3 cups</td>
+                </tr>
+                <tr>
+                    <td>Dark Rum</td>
+                    <td>1 ½ cups</td>
+                    <td>3 cups</td>
+                </tr>
+                <tr>
+                    <td>Brandy</td>
+                    <td>1 ½ cups</td>
+                    <td>3 cups</td>
+                </tr>
+                <tr>
+                    <td>Vanilla</td>
+                    <td>1 tbsp</td>
+                    <td>2 tbsp</td>
+                </tr>
+                <tr>
+                    <td>Half-and-half or Light Cream</td>
+                    <td>1 quart</td>
+                    <td>2 quart</td>
+                </tr>
+                <tr>
+                    <td>Freshly grated nutmeg to taste</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </section>
+
+  <section id="forms">
+
+    <header>
+        <h1>Forms</h1>
+        <p class="lead">Some text about forms.</p>
+    </header>
+
+    <h2>Inputs</h2>
+    <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+
+    <h3>Basic</h3>
+
+    <label>Text input</label>
+    <input type="text" value="default value that goes on and on without stopping or punctuation">
+
+    <label>Email input</label>
+    <input type="email" placeholder="your@email.com">
+
+    <label>Search input</label>
+    <input type="search" placeholder="Search...">
+
+    <label>Tel input</label>
+    <input type="tel" placeholder="01234 567890">
+
+    <label>URL input</label>
+    <input type="url" placeholder="http://">
+
+    <label>Password input</label>
+    <input type="password" value="password">
+
+    <label>File input</label>
+    <input type="file">
+
+    <h3>Advanced</h3>
+    <label for="ic">Color input</label>
+    <input type="color" value="#000000" id="ic">
+
+    <label for="in">Number input</label>
+    <input type="number" value="5" max="10" min="0" id="in">
+
+    <label for="ir">Range input</label>
+    <input type="range" value="10" id="ir">
+
+    <label for="idd">Date input</label>
+    <input type="date" value="1970-01-01" id="idd">
+
+    <label for="idm">Month input</label>
+    <input type="month" value="1970-01" id="idm">
+
+    <label for="idw">Week input</label>
+    <input type="week" value="1970-W01" id="idw">
+
+    <label for="idt">Datetime input</label>
+    <input type="datetime" value="1970-01-01T00:00:00Z" id="idt">
+
+    <label for="idtl">Datetime-local input</label>
+    <input type="datetime-local" value="1970-01-01T00:00" id="idtl"></p>
+
+    <h2>Selects</h2>
+
+    <label>Default Select</label>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <label>Disabled Select</label>
+    <select disabled class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <label>Multiple Select</label>
+    <select multiple="multiple">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <h2>Radio &amp; Checkbox</h2>
+
+    <label class="radio">
+        <input type="radio"> this is a radio input
+    </label>
+
+    <label class="checkox">
+        <input type="checkbox"> this is a checkbox input
+    </label>
+
+    <h6>Inline</h6>
+    <label class="radio-inline">
+        <input name="radio-group" type="radio"> 1
+    </label>
+
+    <label class="radio-inline">
+        <input name="radio-group" type="radio"> 2
+    </label>
+
+    <label class="radio-inline">
+        <input name="radio-group" type="radio"> 3
+    </label>
+
+    <label class="btn">
+        <input type="checkbox"> Button Checkbox
+    </label>
+
+    <h2>Patterns</h2>
+
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <div class="form-row">
+                <label for="login-email">Email</label>
+                <input id="login-email" name="login-email" type="email">
+            </div>
+            <div class="form-row">
+                <label for="login-password">Password</label>
+                <input id="login-password" name="login-password" type="password">
+            </div>
+            <div class="form-row">
+                <label for="login-remember">
+                    <input id="login-remember" name="login-remember" type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+
+    <form class="form-horizontal">
+        <legend>Leave a comment</legend>
+        <div id="comment-form">
+            <div class="form-row">
+                <label for="author-name">Name</label>
+                <input id="author-name" name="author-name" type="text">
+                <span class="form-feedback feedback-warning">Are you sure this is your name?</span>
+            </div>
+            <div class="form-row">
+                <label for="author-email">Email</label>
+                <input id="author-email" name="author-email" type="email">
+                <span class="form-feedback feedback-negative">Enter a valid email</span>
+            </div>
+            <div class="form-row">
+                <label for="author-website">Website</label>
+                <input id="author-website" name="author-website" type="url">
+                <span class="form-feedback feedback-positive">Valid url</span>
+            </div>
+            <div class="form-row">
+                <label for="author-comment">Comment</label>
+                <textarea id="author-comment" name="author-comment" rows="5"></textarea>
+            </div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+
+  </section>
+</div>
+
+    </main>
+
+    <!-- JS -->
+    <script src="/assets/javascript/all.min.9c65cf6b.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-76488535-1', 'auto');
-      ga('send', 'pageview');</script></body></html>
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
