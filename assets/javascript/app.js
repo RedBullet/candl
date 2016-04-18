@@ -17967,7 +17967,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _webfontloader2.default.load({
   google: {
-    families: ['Roboto+Slab:300,400,700:latin', 'Roboto:300,400,700,300:latin', 'Permanent+Marker::latin', 'Amatic+SC:400,700:latin']
+    families: ['Roboto:300,400,700,300:latin', 'Amatic+SC:400,700:latin']
   }
 });
 
