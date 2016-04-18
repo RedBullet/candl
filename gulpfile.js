@@ -117,9 +117,14 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml"])
+  return gulp.src(["serve/*.txt", "serve/*.xml", 'serve/CNAME'])
     .pipe(gulp.dest("site"))
     .pipe($.size({ title: "xml & txt" }))
+});
+
+gulp.task("copy:dev", function () {
+  return gulp.src(["CNAME"])
+    .pipe(gulp.dest("serve"))
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
@@ -201,7 +206,7 @@ gulp.task("serve:prod", function () {
 });
 
 // Default task, run when just writing "gulp" in the terminal
-gulp.task("default", ["serve:dev", "watch"]);
+gulp.task("default", ["serve:dev", "copy:dev", "watch"]);
 
 // Checks your CSS, JS and Jekyll for errors
 gulp.task("check", ["jslint", "doctor"], function () {
