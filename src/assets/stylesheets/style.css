@@ -2551,7 +2551,7 @@ button[type=submit] {
         top: 0; } }
 
 .thanks {
-  background: url(/assets/images/success-bg.svg) 0 0 no-repeat;
+  background: url(/assets/images/success-bg.png) 0 0 no-repeat;
   background-size: 100% 100%;
   margin-left: -5em;
   padding: 5em;

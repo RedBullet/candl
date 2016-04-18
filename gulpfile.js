@@ -138,33 +138,15 @@ gulp.task("html", ["styles"], function () {
     // Minify CSS
     .pipe($.if("*.css", $.minifyCss()))
     // Start cache busting the files
-    .pipe($.revAll({ ignore: [".eot", ".svg", ".ttf", ".woff"] }))
+    .pipe($.revAll({ ignore: [".eot", ".svg", ".ttf", ".woff", ".jpg", ".png"] }))
     .pipe(assets.restore())
     // Conctenate your files based on what you specified in _layout/header.html
     .pipe($.useref())
     // Replace the asset names with their cache busted names
     .pipe($.revReplace())
-    // Minify HTML
-    .pipe($.if("*.html", $.htmlmin({
-      removeComments: true,
-      removeCommentsFromCDATA: true,
-      removeCDATASectionsFromCDATA: true,
-      collapseWhitespace: true,
-      collapseBooleanAttributes: true,
-      removeAttributeQuotes: true,
-      removeRedundantAttributes: true
-    })))
     // Send the output to the correct folder
     .pipe(gulp.dest("site"))
     .pipe($.size({title: "optimizations"}));
-});
-
-// Run JS Lint against your JS
-gulp.task("jslint", function () {
-  gulp.src("./serve/assets/javascript/*.js")
-    // Checks your JS code quality against your .jshintrc file
-    .pipe($.jshint(".jshintrc"))
-    .pipe($.jshint.reporter());
 });
 
 // Runs "jekyll doctor" on your site to check for errors with your configuration
@@ -207,11 +189,6 @@ gulp.task("serve:prod", function () {
 
 // Default task, run when just writing "gulp" in the terminal
 gulp.task("default", ["serve:dev", "copy:dev", "watch"]);
-
-// Checks your CSS, JS and Jekyll for errors
-gulp.task("check", ["jslint", "doctor"], function () {
-  // Better hope nothing is wrong.
-});
 
 // Builds the site but doesn"t serve it to you
 gulp.task("build", ["jekyll:prod", "styles","scripts"], function () {});
