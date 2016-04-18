@@ -17,6 +17,7 @@
     padding: $padding-v $padding-h;
     position: relative;
     top: -0.3em;
+    width: 100%;
 
     @include bp-1 {
       max-width: 8em;
