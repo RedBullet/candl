@@ -17955,10 +17955,6 @@ var _flickity = require('flickity');
 
 var _flickity2 = _interopRequireDefault(_flickity);
 
-var _svgFix = require('./components/svg-fix');
-
-var _svgFix2 = _interopRequireDefault(_svgFix);
-
 var _pikaday = require('pikaday');
 
 var _pikaday2 = _interopRequireDefault(_pikaday);
@@ -17988,9 +17984,8 @@ if (!checkDateInput()) {
 (0, _scrollTo2.default)();
 (0, _bookingDates2.default)();
 (0, _validateForm2.default)();
-(0, _svgFix2.default)();
 
-},{"./components/booking-dates":323,"./components/gallery":324,"./components/scrollTo":325,"./components/svg-fix":326,"./components/validate-form":327,"babel-polyfill":1,"flickity":301,"pikaday":313,"webfontloader":320}],323:[function(require,module,exports){
+},{"./components/booking-dates":323,"./components/gallery":324,"./components/scrollTo":325,"./components/validate-form":326,"babel-polyfill":1,"flickity":301,"pikaday":313,"webfontloader":320}],323:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18118,60 +18113,6 @@ function scrollToThis(e) {
 }
 
 },{}],326:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = init;
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function isCrapBrowser() {
-  var ua = window.navigator.userAgent;
-  if (ua.indexOf('Trident/7.0') > 0) {
-    return true;
-  } else if (ua.indexOf('Trident/6.0') > 0) {
-    return true;
-  } else if (ua.indexOf('Trident/5.0') > 0) {
-    return true;
-  } else if (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && !(nua.indexOf('Chrome') > -1)) {
-    return true;
-  }
-  return false; // not IE9, 10 or 11 or android
-}
-
-function fixThisSVG(svg) {
-  var width = svg.getAttribute('width');
-  var height = svg.getAttribute('height');
-
-  if (width && height && !svg.getAttribute('data-ignore-svg-polyfill') && isCrapBrowser()) {
-    var ratio = parseInt(height, 10) / parseInt(width, 10) * 100 + '%';
-    var wrapper = document.createElement('div');
-    var spacer = document.createElement('div');
-
-    spacer.setAttribute('style', 'display: block; padding-bottom: ' + ratio);
-    wrapper.setAttribute('style', 'position: relative;height: 100%');
-
-    wrapper.appendChild(spacer);
-
-    svg.parentNode.appendChild(wrapper);
-
-    svg.setAttribute('style', 'display: block; width: 100%; position: absolute; top: 0; left: 0; bottom: 0;');
-
-    wrapper.appendChild(svg);
-  }
-}
-
-function fixSizes() {
-  [].concat(_toConsumableArray(document.querySelectorAll('svg'))).forEach(fixThisSVG);
-}
-
-function init() {
-  fixSizes();
-}
-
-},{}],327:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

@@ -5,7 +5,6 @@ import bookingDates from './components/booking-dates';
 import validateForm from './components/validate-form';
 import gallery from './components/gallery';
 import flickity from 'flickity';
-import svgFix from './components/svg-fix';
 import Pikaday from 'pikaday';
 
 WebFont.load({
@@ -31,4 +30,3 @@ if (!checkDateInput()) {
 scrollTo();
 bookingDates();
 validateForm();
-svgFix();

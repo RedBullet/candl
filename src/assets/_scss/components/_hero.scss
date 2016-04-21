@@ -37,10 +37,10 @@
     }
   }
 
-  &:before {
+  &:after {
     background: url(/assets/images/uneven-edge.svg) 0 0 no-repeat;
     background-size: cover;
-    bottom: 0;
+    bottom: -.1em;
     content: '';
     display: block;
     height: 1.5em;

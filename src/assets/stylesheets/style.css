@@ -2226,7 +2226,10 @@ hr {
       height: 6.5em; } }
 
 img {
-  border-radius: 0.375em; }
+  border-radius: 0.375em;
+  width: 100%;
+  max-width: 100%;
+  display: block; }
 
 h1 + img,
 h2 + img,
@@ -2404,10 +2407,10 @@ button[type=submit] {
     @media (min-width: 80em) {
       .hero-title {
         padding: 1em 0; } }
-  .hero:before {
+  .hero:after {
     background: url(/assets/images/uneven-edge.svg) 0 0 no-repeat;
     background-size: cover;
-    bottom: 0;
+    bottom: -.1em;
     content: '';
     display: block;
     height: 1.5em;
@@ -2471,59 +2474,67 @@ button[type=submit] {
           width: 10.53472%; } }
 
 .masthead {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #4dadff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  text-align: center; }
   @media (min-width: 40em) {
     .masthead {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
   .masthead-brand {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 0.5em 1em;
     position: relative;
     top: -0.3em;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     @media (min-width: 40em) {
       .masthead-brand {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         max-width: 8em; } }
   .masthead-logo {
     width: 6.875em;
     height: auto;
-    display: block; }
+    display: block;
+    margin: auto; }
+    .masthead-logo img {
+      margin-bottom: 0; }
   .masthead-nav {
     color: white;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle; }
+    @media (min-width: 40em) {
+      .masthead-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    .masthead-nav-item {
+      display: inline-block; }
     .masthead-nav-link {
       color: white;
       display: block;
@@ -2542,7 +2553,7 @@ button[type=submit] {
     color: #ffff66;
     padding-bottom: 0.25em;
     position: relative;
-    top: 0.25em; }
+    top: 2px; }
     @media (min-width: 40em) {
       .masthead-booking {
         background-color: #ffff66;

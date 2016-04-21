@@ -1,25 +1,26 @@
 .masthead {
-  align-items: center;
   background-color: $color-brand-primary;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   padding: $padding-v $padding-h;
+  text-align: center;
 
   @include bp-1 {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap; // Not supported Android <= 4.3
     justify-content: space-between;
   }
 
   &-brand {
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
     padding: $padding-v $padding-h;
     position: relative;
     top: -0.3em;
     width: 100%;
+    text-align: center;
 
     @include bp-1 {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
       max-width: 8em;
     }
   }
@@ -28,12 +29,27 @@
     width: 110 / 16 * 1em;
     height: auto;
     display: block;
+    margin: auto;
+
+    img {
+      margin-bottom: 0;
+    }
   }
 
   &-nav {
     @extend %list-unstyled;
     color: white;
-    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    @include bp-1 {
+      display: flex;
+    }
+
+    &-item {
+      display: inline-block;
+    }
 
     &-link {
       color: white;
@@ -63,7 +79,7 @@
     color: #ffff66;
     padding-bottom: 0.25em;
     position: relative;
-    top: 0.25em;
+    top: 2px;
 
     @include bp-1 {
       background-color: #ffff66;
