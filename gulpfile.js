@@ -46,20 +46,6 @@ gulp.task('scripts', function(){
     .pipe(reload({stream: true}));
 });
 
-// ES6 Javascripts
-/*gulp.task('scripts', function () {
-  return gulp.src('src/assets/_es6/javascript.js')
-    .pipe(babel({
-        presets: ['es2015']
-    }))
-    .pipe(gulp.dest('src/assets/javascript/'))
-    .pipe(gulp.dest('serve/assets/javascript/'))
-    .pipe(reload({stream: true}));
-});*/
-
-//////
-
-
 // Deletes the directory that is used to serve the site during development
 gulp.task("clean:dev", del.bind(null, ["serve"]));
 
