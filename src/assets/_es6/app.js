@@ -1,5 +1,4 @@
 import 'babel-polyfill';
-import scrollTo from './components/scrollTo';
 import WebFont from 'webfontloader';
 import bookingDates from './components/booking-dates';
 import validateForm from './components/validate-form';
@@ -26,6 +25,5 @@ if (!checkDateInput()) {
   const picker = new Pikaday({ field: document.querySelector('#date') });
 }
 
-scrollTo();
 bookingDates();
 validateForm();

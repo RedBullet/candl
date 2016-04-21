@@ -18382,10 +18382,6 @@ g,0<d.length&&(d=Aa[d[0]])&&(a.c[e]=d))}a.c[e]||(d=Aa[e])&&(a.c[e]=d);for(d=0;d<
 
 require('babel-polyfill');
 
-var _scrollTo = require('./components/scrollTo');
-
-var _scrollTo2 = _interopRequireDefault(_scrollTo);
-
 var _webfontloader = require('webfontloader');
 
 var _webfontloader2 = _interopRequireDefault(_webfontloader);
@@ -18428,11 +18424,10 @@ if (!checkDateInput()) {
   var picker = new _pikaday2.default({ field: document.querySelector('#date') });
 }
 
-(0, _scrollTo2.default)();
 (0, _bookingDates2.default)();
 (0, _validateForm2.default)();
 
-},{"./components/booking-dates":325,"./components/scrollTo":326,"./components/validate-form":327,"babel-polyfill":1,"flickity-imagesloaded":296,"pikaday":315,"webfontloader":322}],325:[function(require,module,exports){
+},{"./components/booking-dates":325,"./components/validate-form":326,"babel-polyfill":1,"flickity-imagesloaded":296,"pikaday":315,"webfontloader":322}],325:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18503,46 +18498,6 @@ function dateSelectorToggle() {
 }
 
 },{}],326:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
-  var selector = arguments.length <= 0 || arguments[0] === undefined ? '[href^="#"]' : arguments[0];
-
-  var inlineLinks = document.querySelectorAll(selector);
-
-  for (var i = 0; i < inlineLinks.length; i++) {
-    inlineLinks[i].addEventListener('click', scrollToThis);
-  }
-};
-
-function scrollToThis(e) {
-  e.preventDefault();
-  var target = document.getElementById(this.getAttribute('href').replace('#', '')),
-      top = target.getBoundingClientRect().top + document.querySelector('body').scrollTop,
-      isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
-
-  var doc = document.documentElement;
-  var scrollTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-
-  top = top + scrollTop;
-
-  // Works in FF, might get enabled in Chrome soon (GM Jan 2016 https://www.chromestatus.com/features/5812155903377408)
-  if (isSmoothScrollSupported) {
-    window.scrollTo({
-      'behavior': 'smooth',
-      'left': 0,
-      'top': top
-    });
-  } else {
-    window.scrollTo(0, top);
-  }
-}
-
-},{}],327:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

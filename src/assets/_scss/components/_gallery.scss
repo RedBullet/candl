@@ -9,6 +9,7 @@
 
 .gallery {
   margin-bottom: 4em;
+  white-space: nowrap;
 }
 
 .gallery-cell {
@@ -16,6 +17,7 @@
   height: 12em;
   margin-right: 10px;
   counter-increment: gallery-cell;
+  display: inline-block;
 
 
   @include bp-1 {

@@ -6,7 +6,7 @@
   @include bp-1 {
     align-items: center;
     display: flex;
-    flex-flow: row wrap; // Not supported Android <= 4.3
+    //flex-flow: row wrap; // Not supported Android <= 4.3
     justify-content: space-between;
   }
 
