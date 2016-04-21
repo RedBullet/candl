@@ -3,8 +3,7 @@ import scrollTo from './components/scrollTo';
 import WebFont from 'webfontloader';
 import bookingDates from './components/booking-dates';
 import validateForm from './components/validate-form';
-import gallery from './components/gallery';
-import flickity from 'flickity';
+import flickity from 'flickity-imagesloaded';
 import Pikaday from 'pikaday';
 
 WebFont.load({

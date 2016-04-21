@@ -6453,7 +6453,7 @@ module.exports = require('./modules/_core');
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"_process":314}],290:[function(require,module,exports){
+},{"_process":316}],290:[function(require,module,exports){
 /*!
  * classie v1.0.1
  * class helper functions
@@ -7137,6 +7137,71 @@ return utils;
 }));
 
 },{"desandro-matches-selector":292,"doc-ready":293}],296:[function(require,module,exports){
+/*!
+ * Flickity imagesLoaded v1.0.4
+ * enables imagesLoaded option for Flickity
+ */
+
+/*jshint browser: true, strict: true, undef: true, unused: true */
+
+( function( window, factory ) {
+  /*global define: false, module: false, require: false */
+  'use strict';
+  // universal module definition
+
+  if ( typeof define == 'function' && define.amd ) {
+    // AMD
+    define( [
+      'flickity/js/index',
+      'imagesloaded/imagesloaded'
+    ], function( Flickity, imagesLoaded ) {
+      return factory( window, Flickity, imagesLoaded );
+    });
+  } else if ( typeof exports == 'object' ) {
+    // CommonJS
+    module.exports = factory(
+      window,
+      require('flickity'),
+      require('imagesloaded')
+    );
+  } else {
+    // browser global
+    window.Flickity = factory(
+      window,
+      window.Flickity,
+      window.imagesLoaded
+    );
+  }
+
+}( window, function factory( window, Flickity, imagesLoaded ) {
+'use strict';
+
+Flickity.createMethods.push('_createImagesLoaded');
+
+Flickity.prototype._createImagesLoaded = function() {
+  this.on( 'activate', this.imagesLoaded );
+};
+
+Flickity.prototype.imagesLoaded = function() {
+  if ( !this.options.imagesLoaded ) {
+    return;
+  }
+  var _this = this;
+  function onImagesLoadedProgress( instance, image ) {
+    var cell = _this.getParentCell( image.img );
+    _this.cellSizeChange( cell && cell.element );
+    if ( !_this.options.freeScroll ) {
+      _this.positionSliderAtSelected();
+    }
+  }
+  imagesLoaded( this.slider ).on( 'progress', onImagesLoadedProgress );
+};
+
+return Flickity;
+
+}));
+
+},{"flickity":302,"imagesloaded":309}],297:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -7314,7 +7379,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"fizzy-ui-utils":295}],297:[function(require,module,exports){
+},{"./flickity":301,"fizzy-ui-utils":295}],298:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -7572,7 +7637,7 @@ return proto;
 
 }));
 
-},{"desandro-get-style-property":291,"fizzy-ui-utils":295}],298:[function(require,module,exports){
+},{"desandro-get-style-property":291,"fizzy-ui-utils":295}],299:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -7667,7 +7732,7 @@ return Cell;
 
 }));
 
-},{"get-size":307}],299:[function(require,module,exports){
+},{"get-size":308}],300:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -8038,7 +8103,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295,"unidragger":316}],300:[function(require,module,exports){
+},{"./flickity":301,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295,"unidragger":318}],301:[function(require,module,exports){
 /**
  * Flickity main
  */
@@ -8801,7 +8866,7 @@ return Flickity;
 
 }));
 
-},{"./animate":297,"./cell":298,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295,"get-size":307,"wolfy87-eventemitter":321}],301:[function(require,module,exports){
+},{"./animate":298,"./cell":299,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295,"get-size":308,"wolfy87-eventemitter":323}],302:[function(require,module,exports){
 /*!
  * Flickity v1.1.2
  * Touch, responsive, flickable galleries
@@ -8846,7 +8911,7 @@ return Flickity;
   return Flickity;
 });
 
-},{"./add-remove-cell":296,"./drag":299,"./flickity":300,"./lazyload":302,"./page-dots":303,"./player":304,"./prev-next-button":305}],302:[function(require,module,exports){
+},{"./add-remove-cell":297,"./drag":300,"./flickity":301,"./lazyload":303,"./page-dots":304,"./player":305,"./prev-next-button":306}],303:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -8974,7 +9039,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295}],303:[function(require,module,exports){
+},{"./flickity":301,"desandro-classie":290,"eventie":294,"fizzy-ui-utils":295}],304:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -9159,7 +9224,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"eventie":294,"fizzy-ui-utils":295,"tap-listener":315}],304:[function(require,module,exports){
+},{"./flickity":301,"eventie":294,"fizzy-ui-utils":295,"tap-listener":317}],305:[function(require,module,exports){
 ( function( window, factory ) {
   'use strict';
   // universal module definition
@@ -9352,7 +9417,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"eventie":294,"fizzy-ui-utils":295,"wolfy87-eventemitter":321}],305:[function(require,module,exports){
+},{"./flickity":301,"eventie":294,"fizzy-ui-utils":295,"wolfy87-eventemitter":323}],306:[function(require,module,exports){
 // -------------------------- prev/next button -------------------------- //
 
 ( function( window, factory ) {
@@ -9617,7 +9682,7 @@ return Flickity;
 
 }));
 
-},{"./flickity":300,"eventie":294,"fizzy-ui-utils":295,"tap-listener":315}],306:[function(require,module,exports){
+},{"./flickity":301,"eventie":294,"fizzy-ui-utils":295,"tap-listener":317}],307:[function(require,module,exports){
 // get successful control from form and assemble into object
 // http://www.w3.org/TR/html401/interact/forms.html#h-17.13.2
 
@@ -9876,7 +9941,7 @@ function str_serialize(result, key, value) {
 
 module.exports = serialize;
 
-},{}],307:[function(require,module,exports){
+},{}],308:[function(require,module,exports){
 /*!
  * getSize v1.2.2
  * measure size of elements
@@ -10128,7 +10193,393 @@ if ( typeof define === 'function' && define.amd ) {
 
 })( window );
 
-},{"desandro-get-style-property":291}],308:[function(require,module,exports){
+},{"desandro-get-style-property":291}],309:[function(require,module,exports){
+/*!
+ * imagesLoaded v3.2.0
+ * JavaScript is all like "You images are done yet or what?"
+ * MIT License
+ */
+
+( function( window, factory ) { 'use strict';
+  // universal module definition
+
+  /*global define: false, module: false, require: false */
+
+  if ( typeof define == 'function' && define.amd ) {
+    // AMD
+    define( [
+      'eventEmitter/EventEmitter',
+      'eventie/eventie'
+    ], function( EventEmitter, eventie ) {
+      return factory( window, EventEmitter, eventie );
+    });
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory(
+      window,
+      require('wolfy87-eventemitter'),
+      require('eventie')
+    );
+  } else {
+    // browser global
+    window.imagesLoaded = factory(
+      window,
+      window.EventEmitter,
+      window.eventie
+    );
+  }
+
+})( window,
+
+// --------------------------  factory -------------------------- //
+
+function factory( window, EventEmitter, eventie ) {
+
+'use strict';
+
+var $ = window.jQuery;
+var console = window.console;
+
+// -------------------------- helpers -------------------------- //
+
+// extend objects
+function extend( a, b ) {
+  for ( var prop in b ) {
+    a[ prop ] = b[ prop ];
+  }
+  return a;
+}
+
+var objToString = Object.prototype.toString;
+function isArray( obj ) {
+  return objToString.call( obj ) == '[object Array]';
+}
+
+// turn element or nodeList into an array
+function makeArray( obj ) {
+  var ary = [];
+  if ( isArray( obj ) ) {
+    // use object if already an array
+    ary = obj;
+  } else if ( typeof obj.length == 'number' ) {
+    // convert nodeList to array
+    for ( var i=0; i < obj.length; i++ ) {
+      ary.push( obj[i] );
+    }
+  } else {
+    // array of single index
+    ary.push( obj );
+  }
+  return ary;
+}
+
+  // -------------------------- imagesLoaded -------------------------- //
+
+  /**
+   * @param {Array, Element, NodeList, String} elem
+   * @param {Object or Function} options - if function, use as callback
+   * @param {Function} onAlways - callback function
+   */
+  function ImagesLoaded( elem, options, onAlways ) {
+    // coerce ImagesLoaded() without new, to be new ImagesLoaded()
+    if ( !( this instanceof ImagesLoaded ) ) {
+      return new ImagesLoaded( elem, options, onAlways );
+    }
+    // use elem as selector string
+    if ( typeof elem == 'string' ) {
+      elem = document.querySelectorAll( elem );
+    }
+
+    this.elements = makeArray( elem );
+    this.options = extend( {}, this.options );
+
+    if ( typeof options == 'function' ) {
+      onAlways = options;
+    } else {
+      extend( this.options, options );
+    }
+
+    if ( onAlways ) {
+      this.on( 'always', onAlways );
+    }
+
+    this.getImages();
+
+    if ( $ ) {
+      // add jQuery Deferred object
+      this.jqDeferred = new $.Deferred();
+    }
+
+    // HACK check async to allow time to bind listeners
+    var _this = this;
+    setTimeout( function() {
+      _this.check();
+    });
+  }
+
+  ImagesLoaded.prototype = new EventEmitter();
+
+  ImagesLoaded.prototype.options = {};
+
+  ImagesLoaded.prototype.getImages = function() {
+    this.images = [];
+
+    // filter & find items if we have an item selector
+    for ( var i=0; i < this.elements.length; i++ ) {
+      var elem = this.elements[i];
+      this.addElementImages( elem );
+    }
+  };
+
+  /**
+   * @param {Node} element
+   */
+  ImagesLoaded.prototype.addElementImages = function( elem ) {
+    // filter siblings
+    if ( elem.nodeName == 'IMG' ) {
+      this.addImage( elem );
+    }
+    // get background image on element
+    if ( this.options.background === true ) {
+      this.addElementBackgroundImages( elem );
+    }
+
+    // find children
+    // no non-element nodes, #143
+    var nodeType = elem.nodeType;
+    if ( !nodeType || !elementNodeTypes[ nodeType ] ) {
+      return;
+    }
+    var childImgs = elem.querySelectorAll('img');
+    // concat childElems to filterFound array
+    for ( var i=0; i < childImgs.length; i++ ) {
+      var img = childImgs[i];
+      this.addImage( img );
+    }
+
+    // get child background images
+    if ( typeof this.options.background == 'string' ) {
+      var children = elem.querySelectorAll( this.options.background );
+      for ( i=0; i < children.length; i++ ) {
+        var child = children[i];
+        this.addElementBackgroundImages( child );
+      }
+    }
+  };
+
+  var elementNodeTypes = {
+    1: true,
+    9: true,
+    11: true
+  };
+
+  ImagesLoaded.prototype.addElementBackgroundImages = function( elem ) {
+    var style = getStyle( elem );
+    // get url inside url("...")
+    var reURL = /url\(['"]*([^'"\)]+)['"]*\)/gi;
+    var matches = reURL.exec( style.backgroundImage );
+    while ( matches !== null ) {
+      var url = matches && matches[1];
+      if ( url ) {
+        this.addBackground( url, elem );
+      }
+      matches = reURL.exec( style.backgroundImage );
+    }
+  };
+
+  // IE8
+  var getStyle = window.getComputedStyle || function( elem ) {
+    return elem.currentStyle;
+  };
+
+  /**
+   * @param {Image} img
+   */
+  ImagesLoaded.prototype.addImage = function( img ) {
+    var loadingImage = new LoadingImage( img );
+    this.images.push( loadingImage );
+  };
+
+  ImagesLoaded.prototype.addBackground = function( url, elem ) {
+    var background = new Background( url, elem );
+    this.images.push( background );
+  };
+
+  ImagesLoaded.prototype.check = function() {
+    var _this = this;
+    this.progressedCount = 0;
+    this.hasAnyBroken = false;
+    // complete if no images
+    if ( !this.images.length ) {
+      this.complete();
+      return;
+    }
+
+    function onProgress( image, elem, message ) {
+      // HACK - Chrome triggers event before object properties have changed. #83
+      setTimeout( function() {
+        _this.progress( image, elem, message );
+      });
+    }
+
+    for ( var i=0; i < this.images.length; i++ ) {
+      var loadingImage = this.images[i];
+      loadingImage.once( 'progress', onProgress );
+      loadingImage.check();
+    }
+  };
+
+  ImagesLoaded.prototype.progress = function( image, elem, message ) {
+    this.progressedCount++;
+    this.hasAnyBroken = this.hasAnyBroken || !image.isLoaded;
+    // progress event
+    this.emit( 'progress', this, image, elem );
+    if ( this.jqDeferred && this.jqDeferred.notify ) {
+      this.jqDeferred.notify( this, image );
+    }
+    // check if completed
+    if ( this.progressedCount == this.images.length ) {
+      this.complete();
+    }
+
+    if ( this.options.debug && console ) {
+      console.log( 'progress: ' + message, image, elem );
+    }
+  };
+
+  ImagesLoaded.prototype.complete = function() {
+    var eventName = this.hasAnyBroken ? 'fail' : 'done';
+    this.isComplete = true;
+    this.emit( eventName, this );
+    this.emit( 'always', this );
+    if ( this.jqDeferred ) {
+      var jqMethod = this.hasAnyBroken ? 'reject' : 'resolve';
+      this.jqDeferred[ jqMethod ]( this );
+    }
+  };
+
+  // --------------------------  -------------------------- //
+
+  function LoadingImage( img ) {
+    this.img = img;
+  }
+
+  LoadingImage.prototype = new EventEmitter();
+
+  LoadingImage.prototype.check = function() {
+    // If complete is true and browser supports natural sizes,
+    // try to check for image status manually.
+    var isComplete = this.getIsImageComplete();
+    if ( isComplete ) {
+      // report based on naturalWidth
+      this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );
+      return;
+    }
+
+    // If none of the checks above matched, simulate loading on detached element.
+    this.proxyImage = new Image();
+    eventie.bind( this.proxyImage, 'load', this );
+    eventie.bind( this.proxyImage, 'error', this );
+    // bind to image as well for Firefox. #191
+    eventie.bind( this.img, 'load', this );
+    eventie.bind( this.img, 'error', this );
+    this.proxyImage.src = this.img.src;
+  };
+
+  LoadingImage.prototype.getIsImageComplete = function() {
+    return this.img.complete && this.img.naturalWidth !== undefined;
+  };
+
+  LoadingImage.prototype.confirm = function( isLoaded, message ) {
+    this.isLoaded = isLoaded;
+    this.emit( 'progress', this, this.img, message );
+  };
+
+  // ----- events ----- //
+
+  // trigger specified handler for event type
+  LoadingImage.prototype.handleEvent = function( event ) {
+    var method = 'on' + event.type;
+    if ( this[ method ] ) {
+      this[ method ]( event );
+    }
+  };
+
+  LoadingImage.prototype.onload = function() {
+    this.confirm( true, 'onload' );
+    this.unbindEvents();
+  };
+
+  LoadingImage.prototype.onerror = function() {
+    this.confirm( false, 'onerror' );
+    this.unbindEvents();
+  };
+
+  LoadingImage.prototype.unbindEvents = function() {
+    eventie.unbind( this.proxyImage, 'load', this );
+    eventie.unbind( this.proxyImage, 'error', this );
+    eventie.unbind( this.img, 'load', this );
+    eventie.unbind( this.img, 'error', this );
+  };
+
+  // -------------------------- Background -------------------------- //
+
+  function Background( url, element ) {
+    this.url = url;
+    this.element = element;
+    this.img = new Image();
+  }
+
+  // inherit LoadingImage prototype
+  Background.prototype = new LoadingImage();
+
+  Background.prototype.check = function() {
+    eventie.bind( this.img, 'load', this );
+    eventie.bind( this.img, 'error', this );
+    this.img.src = this.url;
+    // check if image is already complete
+    var isComplete = this.getIsImageComplete();
+    if ( isComplete ) {
+      this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );
+      this.unbindEvents();
+    }
+  };
+
+  Background.prototype.unbindEvents = function() {
+    eventie.unbind( this.img, 'load', this );
+    eventie.unbind( this.img, 'error', this );
+  };
+
+  Background.prototype.confirm = function( isLoaded, message ) {
+    this.isLoaded = isLoaded;
+    this.emit( 'progress', this, this.element, message );
+  };
+
+  // -------------------------- jQuery -------------------------- //
+
+  ImagesLoaded.makeJQueryPlugin = function( jQuery ) {
+    jQuery = jQuery || window.jQuery;
+    if ( !jQuery ) {
+      return;
+    }
+    // set local variable
+    $ = jQuery;
+    // $().imagesLoaded()
+    $.fn.imagesLoaded = function( options, callback ) {
+      var instance = new ImagesLoaded( this, options, callback );
+      return instance.jqDeferred.promise( $(this) );
+    };
+  };
+  // try making plugin
+  ImagesLoaded.makeJQueryPlugin();
+
+  // --------------------------  -------------------------- //
+
+  return ImagesLoaded;
+
+});
+
+},{"eventie":294,"wolfy87-eventemitter":323}],310:[function(require,module,exports){
 /**
  * Module dependencies
  */
@@ -10227,7 +10678,7 @@ function jsonp(url, opts, fn){
   return cancel;
 }
 
-},{"debug":309}],309:[function(require,module,exports){
+},{"debug":311}],311:[function(require,module,exports){
 
 /**
  * This is the web browser implementation of `debug()`.
@@ -10404,7 +10855,7 @@ function localstorage(){
   } catch (e) {}
 }
 
-},{"./debug":310}],310:[function(require,module,exports){
+},{"./debug":312}],312:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -10603,7 +11054,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":311}],311:[function(require,module,exports){
+},{"ms":313}],313:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -10728,7 +11179,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],312:[function(require,module,exports){
+},{}],314:[function(require,module,exports){
 //! moment.js
 //! version : 2.12.0
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -14417,7 +14868,7 @@ function plural(ms, n, name) {
     return _moment;
 
 }));
-},{}],313:[function(require,module,exports){
+},{}],315:[function(require,module,exports){
 /*!
  * Pikaday
  *
@@ -15503,7 +15954,7 @@ function plural(ms, n, name) {
 
 }));
 
-},{"moment":312}],314:[function(require,module,exports){
+},{"moment":314}],316:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -15596,7 +16047,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],315:[function(require,module,exports){
+},{}],317:[function(require,module,exports){
 /*!
  * Tap listener v1.1.2
  * listens to taps
@@ -15712,7 +16163,7 @@ return TapListener;
 
 }));
 
-},{"unipointer":317}],316:[function(require,module,exports){
+},{"unipointer":319}],318:[function(require,module,exports){
 /*!
  * Unidragger v1.1.5
  * Draggable base class
@@ -16080,7 +16531,7 @@ return Unidragger;
 
 }));
 
-},{"eventie":294,"unipointer":317}],317:[function(require,module,exports){
+},{"eventie":294,"unipointer":319}],319:[function(require,module,exports){
 /*!
  * Unipointer v1.1.0
  * base class for doing one thing with pointer event
@@ -16398,7 +16849,7 @@ return Unipointer;
 
 }));
 
-},{"eventie":294,"wolfy87-eventemitter":321}],318:[function(require,module,exports){
+},{"eventie":294,"wolfy87-eventemitter":323}],320:[function(require,module,exports){
 /*!
  * depd
  * Copyright(c) 2015 Douglas Christopher Wilson
@@ -16479,7 +16930,7 @@ function wrapproperty(obj, prop, message) {
   return
 }
 
-},{}],319:[function(require,module,exports){
+},{}],321:[function(require,module,exports){
 /*!
  * Copyright (c) 2015 Chris O'Hara <cohara87@gmail.com>
  *
@@ -17432,7 +17883,7 @@ function wrapproperty(obj, prop, message) {
 
 });
 
-},{"depd":318}],320:[function(require,module,exports){
+},{"depd":320}],322:[function(require,module,exports){
 /* Web Font Loader v1.6.20 - (c) Adobe Systems, Google. License: Apache 2.0 */
 (function(){function aa(a,b,c){return a.call.apply(a.bind,arguments)}function ba(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}function p(a,b,c){p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return p.apply(null,arguments)}var q=Date.now||function(){return+new Date};function ca(a,b){this.a=a;this.m=b||a;this.c=this.m.document}var da=!!window.FontFace;function t(a,b,c,d){b=a.c.createElement(b);if(c)for(var e in c)c.hasOwnProperty(e)&&("style"==e?b.style.cssText=c[e]:b.setAttribute(e,c[e]));d&&b.appendChild(a.c.createTextNode(d));return b}function u(a,b,c){a=a.c.getElementsByTagName(b)[0];a||(a=document.documentElement);a.insertBefore(c,a.lastChild)}function v(a){a.parentNode&&a.parentNode.removeChild(a)}
 function w(a,b,c){b=b||[];c=c||[];for(var d=a.className.split(/\s+/),e=0;e<b.length;e+=1){for(var f=!1,g=0;g<d.length;g+=1)if(b[e]===d[g]){f=!0;break}f||d.push(b[e])}b=[];for(e=0;e<d.length;e+=1){f=!1;for(g=0;g<c.length;g+=1)if(d[e]===c[g]){f=!0;break}f||b.push(d[e])}a.className=b.join(" ").replace(/\s+/g," ").replace(/^\s+|\s+$/,"")}function y(a,b){for(var c=a.className.split(/\s+/),d=0,e=c.length;d<e;d++)if(c[d]==b)return!0;return!1}
@@ -17452,7 +17903,7 @@ function Ea(a){for(var b=a.f.length,c=0;c<b;c++){var d=a.f[c].split(":"),e=d[0].
 g,0<d.length&&(d=Aa[d[0]])&&(a.c[e]=d))}a.c[e]||(d=Aa[e])&&(a.c[e]=d);for(d=0;d<f.length;d+=1)a.a.push(new H(e,f[d]))}};function Fa(a,b){this.c=a;this.a=b}var Ga={Arimo:!0,Cousine:!0,Tinos:!0};Fa.prototype.load=function(a){var b=new C,c=this.c,d=new va(this.a.api,z(c),this.a.text),e=this.a.families;xa(d,e);var f=new za(e);Ea(f);A(c,ya(d),D(b));F(b,function(){a(f.a,f.c,Ga)})};function Ha(a,b){this.c=a;this.a=b}Ha.prototype.load=function(a){var b=this.a.id,c=this.c.m;b?B(this.c,(this.a.api||"https://use.typekit.net")+"/"+b+".js",function(b){if(b)a([]);else if(c.Typekit&&c.Typekit.config&&c.Typekit.config.fn){b=c.Typekit.config.fn;for(var e=[],f=0;f<b.length;f+=2)for(var g=b[f],k=b[f+1],h=0;h<k.length;h++)e.push(new H(g,k[h]));try{c.Typekit.load({events:!1,classes:!1,async:!0})}catch(m){}a(e)}},2E3):a([])};function Ia(a,b){this.c=a;this.f=b;this.a=[]}Ia.prototype.load=function(a){var b=this.f.id,c=this.c.m,d=this;b?(c.__webfontfontdeckmodule__||(c.__webfontfontdeckmodule__={}),c.__webfontfontdeckmodule__[b]=function(b,c){for(var g=0,k=c.fonts.length;g<k;++g){var h=c.fonts[g];d.a.push(new H(h.name,ga("font-weight:"+h.weight+";font-style:"+h.style)))}a(d.a)},B(this.c,z(this.c)+(this.f.api||"//f.fontdeck.com/s/css/js/")+ea(this.c)+"/"+b+".js",function(b){b&&a([])})):a([])};var Y=new pa(window);Y.a.c.custom=function(a,b){return new ua(b,a)};Y.a.c.fontdeck=function(a,b){return new Ia(b,a)};Y.a.c.monotype=function(a,b){return new sa(b,a)};Y.a.c.typekit=function(a,b){return new Ha(b,a)};Y.a.c.google=function(a,b){return new Fa(b,a)};var Z={load:p(Y.load,Y)};"function"===typeof define&&define.amd?define(function(){return Z}):"undefined"!==typeof module&&module.exports?module.exports=Z:(window.WebFont=Z,window.WebFontConfig&&Y.load(window.WebFontConfig));}());
 
 
-},{}],321:[function(require,module,exports){
+},{}],323:[function(require,module,exports){
 /*!
  * EventEmitter v4.2.11 - git.io/ee
  * Unlicense - http://unlicense.org/
@@ -17926,7 +18377,7 @@ g,0<d.length&&(d=Aa[d[0]])&&(a.c[e]=d))}a.c[e]||(d=Aa[e])&&(a.c[e]=d);for(d=0;d<
     }
 }.call(this));
 
-},{}],322:[function(require,module,exports){
+},{}],324:[function(require,module,exports){
 'use strict';
 
 require('babel-polyfill');
@@ -17947,13 +18398,9 @@ var _validateForm = require('./components/validate-form');
 
 var _validateForm2 = _interopRequireDefault(_validateForm);
 
-var _gallery = require('./components/gallery');
+var _flickityImagesloaded = require('flickity-imagesloaded');
 
-var _gallery2 = _interopRequireDefault(_gallery);
-
-var _flickity = require('flickity');
-
-var _flickity2 = _interopRequireDefault(_flickity);
+var _flickityImagesloaded2 = _interopRequireDefault(_flickityImagesloaded);
 
 var _pikaday = require('pikaday');
 
@@ -17985,7 +18432,7 @@ if (!checkDateInput()) {
 (0, _bookingDates2.default)();
 (0, _validateForm2.default)();
 
-},{"./components/booking-dates":323,"./components/gallery":324,"./components/scrollTo":325,"./components/validate-form":326,"babel-polyfill":1,"flickity":301,"pikaday":313,"webfontloader":320}],323:[function(require,module,exports){
+},{"./components/booking-dates":325,"./components/scrollTo":326,"./components/validate-form":327,"babel-polyfill":1,"flickity-imagesloaded":296,"pikaday":315,"webfontloader":322}],325:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18055,24 +18502,7 @@ function dateSelectorToggle() {
   }
 }
 
-},{}],324:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
-  /*var flky = new flickity( '.gallery', {
-    "wrapAround": false,
-    "imagesLoaded": true,
-    "percentPosition": false,
-    "wrapAround": true,
-    "autoPlay": 5000
-  });*/
-};
-
-},{}],325:[function(require,module,exports){
+},{}],326:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18112,7 +18542,7 @@ function scrollToThis(e) {
   }
 }
 
-},{}],326:[function(require,module,exports){
+},{}],327:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18275,7 +18705,7 @@ function init() {
   bind();
 }
 
-},{"form-serialize":306,"jsonp":308,"validator":319}]},{},[322])
+},{"form-serialize":307,"jsonp":310,"validator":321}]},{},[324])
 
 
 //# sourceMappingURL=app.js.map
