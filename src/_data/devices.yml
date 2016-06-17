@@ -5,11 +5,23 @@
   contributor_url: https://twitter.com/stevekreeger
   type: Phone
 
+- name: iPod Touch
+  os: iOS 6.1
+  contributor: Holiday Extras
+  contributor_url: http://www.holidayextras.co.uk
+  type: MP3 Player
+
 - name: iPad Mini 2
   os: iOS 8.1
   contributor: Red Bullet
   contributor_url: http://redbullet.co.uk
   type: Tablet
+
+- name: HTC One
+  os: Android 5.0
+  contributor: Holiday Extras
+  contributor_url: http://www.holidayextras.co.uk
+  type: Phone
 
 - name: HTC One X
   os: Android 4.2
@@ -21,6 +33,12 @@
   os: Android 4.2
   contributor: Chris Mingay
   contributor_url: https://twitter.com/GhostMutt
+  type: Phone
+
+- name: HTC Desire C
+  os: Android 4.0
+  contributor: Red Bullet
+  contributor_url: http://redbullet.co.uk
   type: Phone
 
 - name: Archos 80 Cobalt
@@ -35,10 +53,10 @@
   contributor_url: http://redbullet.co.uk
   type: Phone
 
-- name: HTC Desire C
-  os: Android 4.0
+- name: Samsung Galaxy S2
+  os: Android 4.1.2
   contributor: Red Bullet
-  contributor_url: http://redbullet.co.uk
+  contributor_url: http://www.holidayextras.co.uk
   type: Phone
 
 - name: Huawei U8180
@@ -51,6 +69,24 @@
   os: Android 2.3
   contributor: Red Bullet
   contributor_url: http://redbullet.co.uk
+  type: Phone
+
+- name: Samsung Galaxy Note
+  os: Android 4.1.2
+  contributor: Holiday Extras
+  contributor_url: http://www.holidayextras.co.uk
+  type: Phone
+
+- name: Tesco Hudl
+  os: Android 4.2
+  contributor: Holiday Extras
+  contributor_url: http://www.holidayextras.co.uk
+  type: Tablet
+
+- name: Nokia Lumia 840
+  os: Windows Phone 8
+  contributor: Holiday Extras
+  contributor_url: http://www.holidayextras.co.uk
   type: Phone
 
 - name: Nokia Lumia 620
